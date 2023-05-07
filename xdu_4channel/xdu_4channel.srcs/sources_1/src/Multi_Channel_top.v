@@ -84,6 +84,9 @@ wire 		data_refresh;
 wire [3:0]	channel_state;
 wire 		cmd_full;
 
+wire [3:0]	change_target_temp;
+wire [15:0] target_temp;
+
 
 Control Control_new(
 	.clk 							(clk),
@@ -108,14 +111,9 @@ Control Control_new(
 	.LD2_Current					(LD2_Current),
 	.LD3_Current					(LD3_Current),
 	.LD4_Current					(LD4_Current),
-	.TEC1_valid						(TEC1_valid),
-	.TEC2_valid						(TEC2_valid),	
-	.TEC3_valid						(TEC3_valid),
-	.TEC4_valid						(TEC4_valid),
-	.TEC1							(TEC1),
-	.TEC2							(TEC2),
-	.TEC3							(TEC3),
-	.TEC4							(TEC4),
+
+	.change_target_temp				(change_target_temp),
+	.target_temp					(target_temp),
 
 	.DAC1_Channel_en				(DAC1_Channel_en),
 	.DAC1_Channel_en_valid			(DAC1_Channel_en_valid),
@@ -243,6 +241,27 @@ uart_top uart_top_new(
 	.Out_data_valid		(Out_data_valid),
 	.rx					(rx),
 	.tx					(tx)
+);
+
+pid_contorl  u_pid_contorl (
+    .clk                     ( clk                   ),
+    .rst_n                   ( rst_n                 ),
+    .target_Temp             ( target_Temp           ),
+    .change_target_temp      ( change_target_temp    ),
+    .ac_temp1                ( TEC_Temp1             ),
+    .ac_temp2                ( TEC_Temp2             ),
+    .ac_temp3                ( TEC_Temp3             ),
+    .ac_temp4                ( TEC_Temp4             ),
+    .Open_state              ( channel_state         ),
+
+    .AD_temp_1               ( TEC1             	 ),
+    .AD_temp_2               ( TEC2             	 ),
+    .AD_temp_3               ( TEC3             	 ),
+    .AD_temp_4               ( TEC4             	 ),
+    .AD_temp_valid1          ( TEC1_valid	         ),
+    .AD_temp_valid2          ( TEC2_valid        	 ),
+    .AD_temp_valid3          ( TEC3_valid        	 ),
+    .AD_temp_valid4          ( TEC4_valid        	 )	
 );
 
 // test test(

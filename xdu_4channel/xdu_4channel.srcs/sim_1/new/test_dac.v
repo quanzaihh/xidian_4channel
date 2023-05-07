@@ -254,7 +254,7 @@ always #10 clk <= ~clk;
 // );
 
 // reg  [15:0] target_Temp;
-// reg  [3:0]  channge_target_temp;
+// reg  [3:0]  change_target_temp;
 // wire [15:0] ac_temp1;
 // wire [15:0] ac_temp2;
 // wire [15:0] ac_temp3;
@@ -277,16 +277,16 @@ always #10 clk <= ~clk;
 // initial begin
 //     #10000
 //     target_Temp <= 15;
-//     channge_target_temp <= 4'b0001;
+//     change_target_temp <= 4'b0001;
 //     #20
 //     target_Temp <= 16;
-//     channge_target_temp <= 4'b0010;
+//     change_target_temp <= 4'b0010;
 //     #20
 //     target_Temp <= 17;
-//     channge_target_temp <= 4'b0100;
+//     change_target_temp <= 4'b0100;
 //     #20
 //     target_Temp <= 18;
-//     channge_target_temp <= 4'b1000;
+//     change_target_temp <= 4'b1000;
 //     #100
 //     Open_state <= 4'b1111;
 // end
@@ -295,7 +295,7 @@ always #10 clk <= ~clk;
 //     .clk                    (clk),
 //     .rst_n                  (rst_n),
 //     .target_Temp            (target_Temp),
-//     .channge_target_temp    (channge_target_temp),
+//     .change_target_temp    (change_target_temp),
 //     .ac_temp1               (ac_temp1),
 //     .ac_temp2               (ac_temp2),
 //     .ac_temp3               (ac_temp3),
@@ -321,44 +321,44 @@ reg [15:0]     ac_temp1;
 reg [15:0]     ac_temp2;
 reg [15:0]     ac_temp3;
 reg [15:0]     ac_temp4;
-reg [3:0]      channge_target_temp;
+reg [3:0]      change_target_temp;
 reg [15:0]     target_Temp;
 reg [3:0]      Open_state;
 
 initial begin
-    ac_temp1 <= 16'h0f00;
-    ac_temp2 <= 16'h0f00;
-    ac_temp3 <= 16'h0f00;
-    ac_temp4 <= 16'h0f00;
+    ac_temp1 <= 16'h0ec0;
+    ac_temp2 <= 16'h0ec0;
+    ac_temp3 <= 16'h0ec0;
+    ac_temp4 <= 16'h0ec0;
     Open_state <= 4'b0000;
     #100
-    channge_target_temp <= 4'b0001;
-    target_Temp <= 16'h0f00;
+    change_target_temp <= 4'b0001;
+    target_Temp <= 16'h0ec0;
     Open_state <= 4'b0001;
     #100
-    channge_target_temp <= 4'b0010;
-    target_Temp <= 16'h0f00;
+    change_target_temp <= 4'b0010;
+    target_Temp <= 16'h0ec0;
     Open_state <= 4'b0011;
     #100
-    channge_target_temp <= 4'b0100;
-    target_Temp <= 16'h0f00;
+    change_target_temp <= 4'b0100;
+    target_Temp <= 16'h0ec0;
     Open_state <= 4'b0111;
     #100
-    channge_target_temp <= 4'b1000;
-    target_Temp <= 16'h0f00;
+    change_target_temp <= 4'b1000;
+    target_Temp <= 16'h0ec0;
     Open_state <= 4'b1111;
     #1000
-    channge_target_temp <= 4'b0001;
-    target_Temp <= 16'h0eff;
+    change_target_temp <= 4'b0001;
+    target_Temp <= 16'h0f00;
     #1000
-    channge_target_temp <= 4'b0010;
-    target_Temp <= 16'h0eff;
+    change_target_temp <= 4'b0010;
+    target_Temp <= 16'h0f00;
     #1000
-    channge_target_temp <= 4'b0100;
-    target_Temp <= 16'h0eff;
+    change_target_temp <= 4'b0100;
+    target_Temp <= 16'h0f00;
     #1000
-    channge_target_temp <= 4'b1000;
-    target_Temp <= 16'h0eff;
+    change_target_temp <= 4'b1000;
+    target_Temp <= 16'h0f00;
 end
 
 
@@ -367,7 +367,7 @@ pid_contorl pid_contorl(
     .clk                    (clk),
     .rst_n                  (rst_n),
     .target_Temp            (target_Temp),
-    .channge_target_temp    (channge_target_temp),
+    .change_target_temp     (change_target_temp),
     .ac_temp1               (ac_temp1),
     .ac_temp2               (ac_temp2),
     .ac_temp3               (ac_temp3),
@@ -382,5 +382,6 @@ pid_contorl pid_contorl(
     .AD_temp_valid4         (AD_temp_valid4),
     .Open_state             (Open_state)
 );
+
 
 endmodule

@@ -23,14 +23,8 @@ module Control(
 	output reg[15:0]LD2_Current,
 	output reg[15:0]LD3_Current,
 	output reg[15:0]LD4_Current,
-	output reg 		TEC1_valid,
-	output reg 		TEC2_valid,
-	output reg 		TEC3_valid,
-	output reg 		TEC4_valid,
-	output reg[15:0]TEC1,
-	output reg[15:0]TEC2,
-	output reg[15:0]TEC3,
-	output reg[15:0]TEC4,
+	output reg[3:0] change_target_temp,
+	output reg[15:0]target_temp,
 
 	output reg[7:0]	DAC1_Channel_en,
 	output reg		DAC1_Channel_en_valid,
@@ -76,10 +70,7 @@ always@(posedge clk or negedge rst_n)begin
 		LD2_Current_valid <= 1'b0;
 		LD3_Current_valid <= 1'b0;
 		LD4_Current_valid <= 1'b0;
-		TEC1_valid <= 1'b0;
-		TEC2_valid <= 1'b0;
-		TEC3_valid <= 1'b0;
-		TEC4_valid <= 1'b0;
+		change_target_temp <= 4'b0000;
 		DAC1_Channel_en_valid <= 1'b0;
 		DAC2_Channel_en_valid <= 1'b0;
 		DA1_open_state <= 8'b00001100;
@@ -91,10 +82,7 @@ always@(posedge clk or negedge rst_n)begin
 		LD2_reverse_voltage <= 16'h0000;
 		LD3_reverse_voltage <= 16'h0000;
 		LD4_reverse_voltage <= 16'h0000;
-		TEC1 <= 16'h0000;
-		TEC2 <= 16'h0000;
-		TEC3 <= 16'h0000;
-		TEC4 <= 16'h0000;
+		target_temp <= 16'h0000;
 		LD1_Current <= 16'h0000;
 		LD2_Current <= 16'h0000;
 		LD3_Current <= 16'h0000;
@@ -155,22 +143,19 @@ always@(posedge clk or negedge rst_n)begin
 			CHANGE_TEMP:begin
 				case(cmd_channel)
 					8'd1:begin
-						TEC1_valid <= 1'b1;
-						TEC1 <= cmd_data;
+						change_target_temp <= 4'b0001;
 					end
 					8'd2:begin
-						TEC2_valid <= 1'b1;
-						TEC2 <= cmd_data;
+						change_target_temp <= 4'b0010;
 					end
 					8'd3:begin
-						TEC3_valid <= 1'b1;
-						TEC3 <= cmd_data;
+						change_target_temp <= 4'b0100;
 					end
 					8'd4:begin
-						TEC4_valid <= 1'b1;
-						TEC4 <= cmd_data;
+						change_target_temp <= 4'b1000;
 					end
 				endcase
+				target_temp <= cmd_data;
 				control_state <= FINISH;
 			end
 
@@ -203,8 +188,6 @@ always@(posedge clk or negedge rst_n)begin
 						DAC1_Channel_en <= DA1_open_state | 8'b01010100;
 						DAC1_Channel_en_valid <= 1'b1;
 						channel_state[0] <= 1'b1;
-						TEC1 <= 16'h0000;
-						TEC1_valid <= 1'b1;
 						LD1_reverse_voltage <= 16'h0000;
 						LD1_reverse_voltage_valid <= 1'b1; 
 						LD1_Current <= 16'h0000;
@@ -215,8 +198,6 @@ always@(posedge clk or negedge rst_n)begin
 						DAC1_Channel_en <= DA1_open_state | 8'b10101000;;
 						DAC1_Channel_en_valid <= 1'b1;
 						channel_state[1] <= 1'b1;
-						TEC2 <= 16'h0000;
-						TEC2_valid <= 1'b1;
 						LD2_reverse_voltage <= 16'h0000;
 						LD2_reverse_voltage_valid <= 1'b1; 
 						LD2_Current <= 16'h0000;
@@ -227,8 +208,6 @@ always@(posedge clk or negedge rst_n)begin
 						DAC2_Channel_en <= DA2_open_state | 8'b01010001;
 						DAC2_Channel_en_valid <= 1'b1;
 						channel_state[2] <= 1'b1;
-						TEC3 <= 16'h0000;
-						TEC3_valid <= 1'b1;
 						LD3_reverse_voltage <= 16'h0000;
 						LD3_reverse_voltage_valid <= 1'b1; 
 						LD3_Current <= 16'h0000;
@@ -239,8 +218,6 @@ always@(posedge clk or negedge rst_n)begin
 						DAC2_Channel_en <= DA2_open_state | 8'b10100010;
 						DAC2_Channel_en_valid <= 1'b1;
 						channel_state[3] <= 1'b1;
-						TEC4 <= 16'h0000;
-						TEC4_valid <= 1'b1;
 						LD4_reverse_voltage <= 16'h0000;
 						LD4_reverse_voltage_valid <= 1'b1; 
 						LD4_Current <= 16'h0000;
@@ -257,32 +234,24 @@ always@(posedge clk or negedge rst_n)begin
 						DAC1_Channel_en <= DA1_open_state & 8'b10101111;
 						DAC1_Channel_en_valid <= 1'b1;
 						channel_state[0] <= 1'b0;
-						TEC1 <= 16'h0000;
-						TEC1_valid <= 1'b1;
 					end
 					8'd2:begin
 						DA1_open_state <= DA1_open_state & 8'b01011111;
 						DAC1_Channel_en <= DA1_open_state & 8'b01011111;;
 						DAC1_Channel_en_valid <= 1'b1;
 						channel_state[1] <= 1'b0;
-						TEC2 <= 16'h0000;
-						TEC2_valid <= 1'b1;
 					end
 					8'd3:begin
 						DA2_open_state <= DA2_open_state & 8'b10101111;
 						DAC2_Channel_en <= DA2_open_state & 8'b10101111;
 						DAC2_Channel_en_valid <= 1'b1;
 						channel_state[2] <= 1'b0;
-						TEC3 <= 16'h0000;
-						TEC3_valid <= 1'b1;
 					end
 					8'd4:begin
 						DA2_open_state <= DA2_open_state & 8'b01011111;
 						DAC2_Channel_en <= DA2_open_state & 8'b01011111;
 						DAC2_Channel_en_valid <= 1'b1;
 						channel_state[3] <= 1'b0;
-						TEC4 <= 16'h0000;
-						TEC4_valid <= 1'b1;
 					end
 				endcase
 				control_state <= FINISH;
@@ -297,10 +266,7 @@ always@(posedge clk or negedge rst_n)begin
 				LD2_Current_valid <= 1'b0;
 				LD3_Current_valid <= 1'b0;
 				LD4_Current_valid <= 1'b0;
-				TEC1_valid <= 1'b0;
-				TEC2_valid <= 1'b0;
-				TEC3_valid <= 1'b0;
-				TEC4_valid <= 1'b0;
+				change_target_temp <= 4'b0000;
 				DAC1_Channel_en_valid <= 1'b0;
 				DAC2_Channel_en_valid <= 1'b0;
 				control_state <= WAIT_FOR_CMD;

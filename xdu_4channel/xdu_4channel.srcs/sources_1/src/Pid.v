@@ -24,15 +24,15 @@ module pid_contorl(
     input               clk,
     input               rst_n,
     input   [15:0]      target_Temp,
-    input   [3:0]       channge_target_temp,
+    input   [3:0]       change_target_temp,
     input   [15:0]      ac_temp1,
     input   [15:0]      ac_temp2,
     input   [15:0]      ac_temp3,
     input   [15:0]      ac_temp4,
-    output  reg[15:0]   AD_temp_1,
-    output  reg[15:0]   AD_temp_2,
-    output  reg[15:0]   AD_temp_3,
-    output  reg[15:0]   AD_temp_4,
+    output  reg [15:0]  AD_temp_1,
+    output  reg [15:0]  AD_temp_2,
+    output  reg [15:0]  AD_temp_3,
+    output  reg [15:0]  AD_temp_4,
     output  reg         AD_temp_valid1,
     output  reg         AD_temp_valid2,
     output  reg         AD_temp_valid3,
@@ -40,8 +40,8 @@ module pid_contorl(
     input   [3:0]       Open_state
 );
 
-parameter P = 16'd14993;
-parameter I = 16'd23268;
+parameter P = 16'd29884;
+parameter I = 16'd23199;
 
 /*-------------------------------------- PID -----------------------------------*/
 reg [15:0]  Target_Temp1;
@@ -52,9 +52,9 @@ reg         CE;
 reg [15:0]  target;
 reg [15:0]  now_value;
 wire[15:0]  error;
-wire[15:0]  sum_error;
+wire[31:0]  sum_error;
 wire[31:0]  P_mul;
-wire[31:0]  PID_out;
+wire[47:0]  PID_out;
 // 改变温度预设值
 always@(posedge clk or negedge rst_n)begin
     if (!rst_n) begin
@@ -63,8 +63,8 @@ always@(posedge clk or negedge rst_n)begin
         Target_Temp3 <= 16'b0;
         Target_Temp4 <= 16'b0;
     end
-    else if (channge_target_temp!=0) begin
-        case(channge_target_temp)
+    else if (change_target_temp!=0) begin
+        case(change_target_temp)
             4'b0001:Target_Temp1 <= target_Temp;
             4'b0010:Target_Temp2 <= target_Temp;
             4'b0100:Target_Temp3 <= target_Temp;
@@ -77,12 +77,12 @@ end
 reg [2:0]   channel;
 reg [3:0]   mul_cnt;
 reg [31:0]  cnt;
-reg [15:0]  error_sum_1;
-reg [15:0]  error_sum_2;
-reg [15:0]  error_sum_3;
-reg [15:0]  error_sum_4;
-reg [15:0]  AD_output;
-reg [15:0]  sum_error_n;
+reg [31:0]  error_sum_1;
+reg [31:0]  error_sum_2;
+reg [31:0]  error_sum_3;
+reg [31:0]  error_sum_4;
+reg [31:0]  AD_output;
+reg [31:0]  sum_error_n;
 
 reg [3:0]   pid_state/* synthesis keep */;          // PID状态机
 parameter   WAIT_TIME       = 0;
@@ -107,9 +107,13 @@ always@(posedge clk or negedge rst_n)begin
         AD_temp_2 <= 16'h8000;
         AD_temp_3 <= 16'h8000;
         AD_temp_4 <= 16'h8000;
-        sum_error_n <= 16'h0000;
+        sum_error_n <= 32'h00000000;
         cnt <= 0;
         mul_cnt <= 0;
+        CE <= 0;
+        target <= 0;
+        now_value <= 0;
+        channel <= 0;
     end
     else begin
         case(pid_state)
@@ -218,11 +222,11 @@ always@(posedge clk or negedge rst_n)begin
 
             WAIT_FOR_CUL:begin
                 if (mul_cnt==8) begin
-                    if (^PID_out[30:23]==0)begin
-                        AD_output <= {PID_out[31],~PID_out[22:8]+1'b1};
+                    if (^PID_out[46:23]==0)begin
+                        AD_output <= {PID_out[47],~PID_out[22:8]+1'b1};
                     end
                     else begin
-                        AD_output <= (PID_out[31])?16'hffff:16'h0000;
+                        AD_output <= (PID_out[47])?16'hffff:16'h0000;
                     end
                     pid_state <= FINISH;
                     mul_cnt <= 0;
@@ -279,8 +283,8 @@ PID_SUB PID_SUB(
 
 PID_adder PID_adder(
     .CLK        (clk),
-    .A          (sum_error_n),
-    .B          (error),
+    .A          (error),
+    .B          (sum_error_n),
     .CE         (CE),
     .S          (sum_error)
 );
@@ -299,7 +303,7 @@ Mul_PID Mul_PID_I(
   .SCLR         (!rst_n),
   .A            (I),
   .B            (sum_error),
-  .PCIN         ({16'd0, P_mul}),
+  .C            ({16'd0, P_mul}),
   .SUBTRACT     (1'b0),
   .P            (PID_out)
 );
