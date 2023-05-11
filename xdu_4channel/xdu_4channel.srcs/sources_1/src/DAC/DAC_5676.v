@@ -42,6 +42,7 @@ reg [7:0]			Volte_change_init;
 reg [7:0]			Channel_init;
 reg 				Channel_init_valid;
 reg [15:0]			cnt;
+reg [1:0]			init_cnt;	//初始化两次保证能写进去
 
 always@(posedge clk or negedge rst_n)begin
 	if (!rst_n) begin
@@ -51,6 +52,7 @@ always@(posedge clk or negedge rst_n)begin
 		Channel_init_valid <= 0;
 		cnt <= 0;
 		da_init_done <= 1'b0;
+		init_cnt <= 0;
 	end
 	else begin
 		case(DAC_init_state)
@@ -79,7 +81,13 @@ always@(posedge clk or negedge rst_n)begin
 			WAIT_SET_DONE:begin
 				Volte_change_init<=8'b00000000;
 				if (Volte_change_reg==8'b00000000) begin
-					DAC_init_state <= INIT_FINISH;
+					init_cnt <= init_cnt + 1'b1;
+					if (init_cnt==2'b0) begin
+						DAC_init_state <= OPEN_ALL_CHANNEL;
+					end
+					else begin
+						DAC_init_state <= INIT_FINISH;
+					end		
 				end
 			end
 

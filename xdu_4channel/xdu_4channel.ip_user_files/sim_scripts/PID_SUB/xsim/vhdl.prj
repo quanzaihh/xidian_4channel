@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../xdu_4channel.srcs/sources_1/ip/PID_SUB/sim/PID_SUB.vhd" \
+
+nosort

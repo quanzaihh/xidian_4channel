@@ -1,0 +1,1309 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed May 10 20:02:21 2023
+# Process ID: 24624
+# Current directory: C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1
+# Command line: vivado.exe -log Multi_Channel_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Multi_Channel_top.tcl
+# Log file: C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/Multi_Channel_top.vds
+# Journal file: C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Multi_Channel_top.tcl -notrace
+Command: synth_design -top Multi_Channel_top -part xc7a35tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28628 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 414.336 ; gain = 104.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Multi_Channel_top' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:3]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:57]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:67]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:87]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:88]
+INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:3]
+	Parameter OPEN_CMD bound to: 8'b00000000 
+	Parameter CHANGE_TEMP_CMD bound to: 8'b00000001 
+	Parameter CHANGE_VOLTAGE_CMD bound to: 8'b00000010 
+	Parameter CHANGE_CURRENT_CMD bound to: 8'b00000011 
+	Parameter CLOSE_CMD bound to: 8'b00000100 
+	Parameter SET_P_I_CMD bound to: 8'b00000101 
+	Parameter WAIT_INIT bound to: 4'b0000 
+	Parameter WAIT_FOR_CMD bound to: 4'b0001 
+	Parameter OPEN bound to: 4'b0010 
+	Parameter CHANGE_VOLTAGE bound to: 4'b0011 
+	Parameter CHANGE_CURRENT bound to: 4'b0100 
+	Parameter CHANGE_TEMP bound to: 4'b0101 
+	Parameter CLOSE bound to: 4'b0110 
+	Parameter FINISH bound to: 4'b0111 
+	Parameter SET_P_I bound to: 4'b1000 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:132]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:154]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:173]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:195]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:241]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:99]
+WARNING: [Synth 8-5788] Register cmd_channel_reg in module Control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:126]
+WARNING: [Synth 8-5788] Register cmd_data_reg in module Control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:127]
+WARNING: [Synth 8-5788] Register set_P_reg in module Control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:272]
+WARNING: [Synth 8-5788] Register set_I_reg in module Control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:276]
+INFO: [Synth 8-256] done synthesizing module 'Control' (1#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:3]
+INFO: [Synth 8-638] synthesizing module 'DAC_5676' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:3]
+	Parameter LENGTH bound to: 6'b011000 
+	Parameter init bound to: 8'b00001100 
+	Parameter WRITE_AND_REFRESH bound to: 4'b0011 
+	Parameter CLOSE_AND_OPEN bound to: 4'b0100 
+	Parameter WAIT_INIT bound to: 3'b000 
+	Parameter OPEN_ALL_CHANNEL bound to: 3'b001 
+	Parameter SET_ALL_CHANNEL bound to: 3'b010 
+	Parameter WAIT_SET_DONE bound to: 3'b011 
+	Parameter INIT_FINISH bound to: 3'b100 
+	Parameter WAIT_CHANGE bound to: 3'b000 
+	Parameter CHANGE_VOLT bound to: 3'b001 
+	Parameter OPEN_OR_CLOSE bound to: 3'b010 
+	Parameter FINISH bound to: 3'b011 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:56]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:135]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:218]
+INFO: [Synth 8-638] synthesizing module 'DAC_fifo' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/realtime/DAC_fifo_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'DAC_fifo' (2#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/realtime/DAC_fifo_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'SPI_Master' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:275]
+	Parameter LENGTH bound to: 6'b011000 
+	Parameter IDLE bound to: 3'b000 
+	Parameter BEGIN_SEND bound to: 3'b001 
+	Parameter CLKUP bound to: 3'b010 
+	Parameter CLKDOWN bound to: 3'b011 
+	Parameter WAIT_CLK bound to: 3'b100 
+INFO: [Synth 8-256] done synthesizing module 'SPI_Master' (3#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:275]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[7] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[6] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[5] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[4] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[3] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[2] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[1] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[0] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+INFO: [Synth 8-256] done synthesizing module 'DAC_5676' (4#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:3]
+INFO: [Synth 8-638] synthesizing module 'DAC_5676__parameterized0' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:3]
+	Parameter LENGTH bound to: 6'b011000 
+	Parameter init bound to: 8'b00000011 
+	Parameter WRITE_AND_REFRESH bound to: 4'b0011 
+	Parameter CLOSE_AND_OPEN bound to: 4'b0100 
+	Parameter WAIT_INIT bound to: 3'b000 
+	Parameter OPEN_ALL_CHANNEL bound to: 3'b001 
+	Parameter SET_ALL_CHANNEL bound to: 3'b010 
+	Parameter WAIT_SET_DONE bound to: 3'b011 
+	Parameter INIT_FINISH bound to: 3'b100 
+	Parameter WAIT_CHANGE bound to: 3'b000 
+	Parameter CHANGE_VOLT bound to: 3'b001 
+	Parameter OPEN_OR_CLOSE bound to: 3'b010 
+	Parameter FINISH bound to: 3'b011 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:56]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:135]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:218]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[7] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[6] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[5] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[4] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[3] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[2] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[1] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[0] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+INFO: [Synth 8-256] done synthesizing module 'DAC_5676__parameterized0' (4#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:3]
+WARNING: [Synth 8-350] instance 'DAC_2' of module 'DAC_5676' requires 14 connections, but only 13 given [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:163]
+INFO: [Synth 8-638] synthesizing module 'Voltage2Temp' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:3]
+	Parameter V_0 bound to: 17'b00001011010111101 
+	Parameter V_1 bound to: 17'b00001101110100111 
+	Parameter V_2 bound to: 17'b00010000100010010 
+	Parameter V_3 bound to: 17'b00010011011101001 
+	Parameter V_4 bound to: 17'b00010110100001110 
+	Parameter V_5 bound to: 17'b00011001101100000 
+	Parameter V_6 bound to: 17'b00011100110111100 
+	Parameter V_7 bound to: 17'b00100000000000000 
+	Parameter V_8 bound to: 17'b00100011000010000 
+	Parameter V_9 bound to: 17'b00100101111010100 
+	Parameter V_10 bound to: 17'b00101000100111010 
+	Parameter V_11 bound to: 17'b00101011000110111 
+	Parameter V_12 bound to: 17'b00101101011000110 
+	Parameter V_13 bound to: 17'b00101111011100111 
+	Parameter V_14 bound to: 17'b00110001010011100 
+	Parameter V_15 bound to: 17'b00110010111101011 
+	Parameter V_16 bound to: 17'b00110100011011100 
+	Parameter W_1 bound to: 24'b010000010010001101010011 
+	Parameter W_2 bound to: 24'b001110110001001011100001 
+	Parameter W_3 bound to: 24'b001101101100110011101101 
+	Parameter W_4 bound to: 24'b001101000001010101001111 
+	Parameter W_5 bound to: 24'b001100101010000010110100 
+	Parameter W_6 bound to: 24'b001100100101001001101110 
+	Parameter W_7 bound to: 24'b001100110000111111011111 
+	Parameter W_8 bound to: 24'b001101001100100110001001 
+	Parameter W_9 bound to: 24'b001101111000000110011001 
+	Parameter W_10 bound to: 24'b001110110100110001001001 
+	Parameter W_11 bound to: 24'b010000000010001010110000 
+	Parameter W_12 bound to: 24'b010001100010111101101100 
+	Parameter W_13 bound to: 24'b010011011000101100100010 
+	Parameter W_14 bound to: 24'b010101100101001101110100 
+	Parameter W_15 bound to: 24'b011000001010110010101100 
+	Parameter W_16 bound to: 24'b011011001110001010001111 
+	Parameter b_1 bound to: 40'b0000100001001001010001000110011100111000 
+	Parameter b_2 bound to: 40'b0000011110100001100100110000101111100000 
+	Parameter b_3 bound to: 40'b0000011100010100010000011000100100110111 
+	Parameter b_4 bound to: 40'b0000011010101010100001110010101100000010 
+	Parameter b_5 bound to: 40'b0000011001101000111101000001111100100001 
+	Parameter b_6 bound to: 40'b0000011001011001001111110111110011101101 
+	Parameter b_7 bound to: 40'b0000011010000011111101111100111011011001 
+	Parameter b_8 bound to: 40'b0000011011110010011000110001111110001010 
+	Parameter b_9 bound to: 40'b0000011110110000111000100001100101100101 
+	Parameter b_10 bound to: 40'b0000100011010000011001110011100000011101 
+	Parameter b_11 bound to: 40'b0000101001011001010100011000001010101001 
+	Parameter b_12 bound to: 40'b0000110001100010111000101110101100011100 
+	Parameter b_13 bound to: 40'b0000111011111110110100001110010101100000 
+	Parameter b_14 bound to: 40'b0001001001000000010001001101000000010011 
+	Parameter b_15 bound to: 40'b0001011000111100101100001111001001111011 
+	Parameter b_16 bound to: 40'b0001101100011001001000111010001010011100 
+	Parameter WAIT_VOLTAGE_REFRESH bound to: 3'b000 
+	Parameter SELECT_CHANNEL bound to: 3'b001 
+	Parameter SELECT_PARAMETER bound to: 3'b010 
+	Parameter WAIT_MUL bound to: 3'b011 
+	Parameter FINISH bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:118]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:232]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:102]
+INFO: [Synth 8-638] synthesizing module 'MULTI_Voltage2temp' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/realtime/MULTI_Voltage2temp_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'MULTI_Voltage2temp' (5#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/realtime/MULTI_Voltage2temp_stub.v:6]
+WARNING: [Synth 8-689] width (40) of port connection 'PCOUT' does not match port width (48) of module 'MULTI_Voltage2temp' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:254]
+WARNING: [Synth 8-5788] Register channel_reg in module Voltage2Temp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:106]
+WARNING: [Synth 8-5788] Register Temp_reg in module Voltage2Temp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:113]
+WARNING: [Synth 8-5788] Register TEC_Temp1_reg in module Voltage2Temp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:233]
+WARNING: [Synth 8-5788] Register TEC_Temp2_reg in module Voltage2Temp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:234]
+WARNING: [Synth 8-5788] Register TEC_Temp3_reg in module Voltage2Temp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:235]
+WARNING: [Synth 8-5788] Register TEC_Temp4_reg in module Voltage2Temp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:236]
+INFO: [Synth 8-256] done synthesizing module 'Voltage2Temp' (6#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:3]
+INFO: [Synth 8-638] synthesizing module 'ad7606' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/ADC/ad7606.v:5]
+	Parameter RESET bound to: 4'b0000 
+	Parameter IDLE bound to: 4'b0001 
+	Parameter AD_CONV bound to: 4'b0010 
+	Parameter Wait_1 bound to: 4'b0011 
+	Parameter Wait_busy bound to: 4'b0100 
+	Parameter READ_CH1 bound to: 4'b0101 
+	Parameter READ_CH2 bound to: 4'b0110 
+	Parameter READ_CH3 bound to: 4'b0111 
+	Parameter READ_CH4 bound to: 4'b1000 
+	Parameter READ_CH5 bound to: 4'b1001 
+	Parameter READ_CH6 bound to: 4'b1010 
+	Parameter READ_CH7 bound to: 4'b1011 
+	Parameter READ_CH8 bound to: 4'b1100 
+	Parameter READ_DONE bound to: 4'b1101 
+INFO: [Synth 8-638] synthesizing module 'volt_cal' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/ADC/volt_cal.v:5]
+INFO: [Synth 8-256] done synthesizing module 'volt_cal' (7#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/ADC/volt_cal.v:5]
+INFO: [Synth 8-256] done synthesizing module 'ad7606' (8#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/ADC/ad7606.v:5]
+INFO: [Synth 8-638] synthesizing module 'Uart_Output' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/Uart_Output.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/Uart_Output.v:25]
+WARNING: [Synth 8-5788] Register cnt_reg in module Uart_Output is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/Uart_Output.v:27]
+WARNING: [Synth 8-5788] Register Out_data_reg in module Uart_Output is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/Uart_Output.v:38]
+INFO: [Synth 8-256] done synthesizing module 'Uart_Output' (9#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/Uart_Output.v:1]
+INFO: [Synth 8-638] synthesizing module 'uart_top' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:3]
+	Parameter CHECK_HEAD bound to: 0 - type: integer 
+	Parameter GET_MODE bound to: 1 - type: integer 
+	Parameter GET_CHANNEL bound to: 2 - type: integer 
+	Parameter GET_VALUE bound to: 3 - type: integer 
+	Parameter CHECK_TAIL bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uart_send_fifo' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/realtime/uart_send_fifo_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'uart_send_fifo' (10#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/realtime/uart_send_fifo_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:104]
+INFO: [Synth 8-638] synthesizing module 'uart_sub' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_sub.v:1]
+	Parameter UART_BPS bound to: 17'b11100001000000000 
+	Parameter CLK_FREQ bound to: 29'b00010111110101111000010000000 
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v:1]
+	Parameter UART_BPS bound to: 17'b11100001000000000 
+	Parameter CLK_FREQ bound to: 29'b00010111110101111000010000000 
+	Parameter BAUD_CNT_MAX bound to: 29'b00000000000000000000110110010 
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (11#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v:1]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:1]
+	Parameter UART_BPS bound to: 17'b11100001000000000 
+	Parameter CLK_FREQ bound to: 29'b00010111110101111000010000000 
+	Parameter BAUD_CNT_MAX bound to: 29'b00000000000000000000110110010 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (12#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:1]
+INFO: [Synth 8-256] done synthesizing module 'uart_sub' (13#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_sub.v:1]
+WARNING: [Synth 8-5788] Register channel_reg in module uart_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:121]
+WARNING: [Synth 8-5788] Register value_reg in module uart_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:129]
+WARNING: [Synth 8-5788] Register cmd_reg in module uart_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:143]
+INFO: [Synth 8-256] done synthesizing module 'uart_top' (14#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:3]
+INFO: [Synth 8-638] synthesizing module 'pid_contorl' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:23]
+	Parameter ERROR_MAX bound to: 2 - type: integer 
+	Parameter WAIT_TIME bound to: 0 - type: integer 
+	Parameter SELETC_CHANNEL bound to: 1 - type: integer 
+	Parameter JUDGE bound to: 2 - type: integer 
+	Parameter WAIT_FOR_CUL bound to: 3 - type: integer 
+	Parameter FINISH bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:47]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:48]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:67]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:68]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:69]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:70]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:74]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:76]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:77]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:114]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:118]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:89]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:177]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:289]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:155]
+INFO: [Synth 8-638] synthesizing module 'PID_SUB' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/realtime/PID_SUB_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'PID_SUB' (15#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/realtime/PID_SUB_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'PID_adder' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/realtime/PID_adder_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'PID_adder' (16#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/realtime/PID_adder_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'Mul_P' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/realtime/Mul_P_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Mul_P' (17#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/realtime/Mul_P_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'Mul_PID' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/realtime/Mul_PID_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Mul_PID' (18#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/realtime/Mul_PID_stub.v:6]
+WARNING: [Synth 8-350] instance 'Mul_PID_I' of module 'Mul_PID' requires 9 connections, but only 8 given [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:390]
+WARNING: [Synth 8-5788] Register AD_output_reg in module pid_contorl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:188]
+INFO: [Synth 8-256] done synthesizing module 'pid_contorl' (19#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:23]
+INFO: [Synth 8-638] synthesizing module 'test_current' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/test.v:116]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/test.v:135]
+INFO: [Synth 8-256] done synthesizing module 'test_current' (20#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/test.v:116]
+INFO: [Synth 8-256] done synthesizing module 'Multi_Channel_top' (21#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:3]
+WARNING: [Synth 8-3331] design test_current has unconnected port open_state[3]
+WARNING: [Synth 8-3331] design test_current has unconnected port open_state[2]
+WARNING: [Synth 8-3331] design test_current has unconnected port open_state[1]
+WARNING: [Synth 8-3331] design pid_contorl has unconnected port Open_state[3]
+WARNING: [Synth 8-3331] design pid_contorl has unconnected port Open_state[2]
+WARNING: [Synth 8-3331] design pid_contorl has unconnected port Open_state[1]
+WARNING: [Synth 8-3331] design pid_contorl has unconnected port Open_state[0]
+WARNING: [Synth 8-3331] design Uart_Output has unconnected port Current_Voltage1[15]
+WARNING: [Synth 8-3331] design Uart_Output has unconnected port Current_Voltage2[15]
+WARNING: [Synth 8-3331] design Uart_Output has unconnected port Current_Voltage3[15]
+WARNING: [Synth 8-3331] design Uart_Output has unconnected port Current_Voltage4[15]
+WARNING: [Synth 8-3331] design ad7606 has unconnected port first_data
+WARNING: [Synth 8-3331] design SPI_Master has unconnected port MISO
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 483.266 ; gain = 173.156
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 483.266 ; gain = 173.156
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/dcp7/MULTI_Voltage2temp_in_context.xdc] for cell 'Voltage2Temp/MULTI_Voltage2temp_new'
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/dcp7/MULTI_Voltage2temp_in_context.xdc] for cell 'Voltage2Temp/MULTI_Voltage2temp_new'
+Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/dcp8/DAC_fifo_in_context.xdc] for cell 'DAC_1/DAC_fifo_new'
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/dcp8/DAC_fifo_in_context.xdc] for cell 'DAC_1/DAC_fifo_new'
+Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/dcp8/DAC_fifo_in_context.xdc] for cell 'DAC_2/DAC_fifo_new'
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/dcp8/DAC_fifo_in_context.xdc] for cell 'DAC_2/DAC_fifo_new'
+Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/dcp9/uart_send_fifo_in_context.xdc] for cell 'uart_top_new/uart_send_fifo_new'
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/dcp9/uart_send_fifo_in_context.xdc] for cell 'uart_top_new/uart_send_fifo_new'
+Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/dcp10/Mul_PID_in_context.xdc] for cell 'u_pid_contorl/Mul_PID_I'
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/dcp10/Mul_PID_in_context.xdc] for cell 'u_pid_contorl/Mul_PID_I'
+Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/dcp11/Mul_P_in_context.xdc] for cell 'u_pid_contorl/Mul_P'
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/dcp11/Mul_P_in_context.xdc] for cell 'u_pid_contorl/Mul_P'
+Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/dcp12/PID_adder_in_context.xdc] for cell 'u_pid_contorl/PID_adder'
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/dcp12/PID_adder_in_context.xdc] for cell 'u_pid_contorl/PID_adder'
+Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/dcp13/PID_SUB_in_context.xdc] for cell 'u_pid_contorl/PID_SUB'
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-24624-DESKTOP-IRHHT3D/dcp13/PID_SUB_in_context.xdc] for cell 'u_pid_contorl/PID_SUB'
+Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc]
+WARNING: [Vivado 12-584] No ports matched 'AD_convstab_1B'. [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'AD_convstab_1A'. [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'AD_convstab_1B'. [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc:68]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Multi_Channel_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Multi_Channel_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Multi_Channel_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 818.820 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 818.820 ; gain = 508.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 818.820 ; gain = 508.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for DAC_1/DAC_fifo_new. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DAC_2/DAC_fifo_new. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Voltage2Temp/MULTI_Voltage2temp_new. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_pid_contorl/Mul_P. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_pid_contorl/Mul_PID_I. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_pid_contorl/PID_SUB. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_pid_contorl/PID_adder. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for uart_top_new/uart_send_fifo_new. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 818.820 ; gain = 508.711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "LD1_reverse_voltage_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LD2_reverse_voltage_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LD3_reverse_voltage_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LD4_reverse_voltage_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "change_target_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DAC1_Channel_en_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DAC2_Channel_en_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "channel_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "set_P_I_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "set_P_I_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "set_P" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'SPI_Master'
+INFO: [Synth 8-5544] ROM "CS" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SCLK" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'DAC_init_state_reg' in module 'DAC_5676'
+INFO: [Synth 8-802] inferred FSM for state register 'DAC_state_reg' in module 'DAC_5676'
+INFO: [Synth 8-802] inferred FSM for state register 'fifo_state_reg' in module 'DAC_5676'
+INFO: [Synth 8-5546] ROM "DAC_init_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Volte_change_init" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Channel_init" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "da_init_done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cmd_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DAC_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "send_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cmd_read_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:52]
+INFO: [Synth 8-5546] ROM "DAC_init_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Volte_change_init" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Channel_init" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "da_init_done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cmd_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DAC_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "send_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cmd_read_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Volte_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Volte_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Volte_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Volte_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Volte_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Volte_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Volte_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Volte_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'DAC_init_state_reg' in module 'DAC_5676__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'DAC_state_reg' in module 'DAC_5676__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'fifo_state_reg' in module 'DAC_5676__parameterized0'
+INFO: [Synth 8-5546] ROM "DAC_init_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Volte_change_init" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Channel_init" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "da_init_done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cmd_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DAC_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "send_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cmd_read_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:52]
+INFO: [Synth 8-5546] ROM "DAC_init_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Volte_change_init" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Channel_init" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "da_init_done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cmd_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DAC_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "send_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cmd_read_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Volte_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Volte_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Volte_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Volte_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Volte_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Volte_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Volte_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Volte_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'Change_state_reg' in module 'Voltage2Temp'
+INFO: [Synth 8-5544] ROM "Change_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CE" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Change_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Change_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Change_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CE" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Change_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Change_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Voltage_reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TEC_Temp1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TEC_Temp2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TEC_Temp3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TEC_Temp4" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ad7606'
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ad_reset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_refresh" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ad_convstab" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ad_rd" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ad_cs" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Uart_Output'
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "bit_flag" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element baud_cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v:64]
+WARNING: [Synth 8-6014] Unused sequential element bit_cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v:84]
+INFO: [Synth 8-5546] ROM "bit_flag" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element baud_cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:44]
+WARNING: [Synth 8-6014] Unused sequential element bit_cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:64]
+INFO: [Synth 8-4471] merging register 'uart_fifo_read_en_reg' into 'next_data_reg' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:45]
+INFO: [Synth 8-4471] merging register 'transmit_flag_reg' into 'next_data_r_reg' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:66]
+WARNING: [Synth 8-6014] Unused sequential element uart_fifo_read_en_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:45]
+WARNING: [Synth 8-6014] Unused sequential element transmit_flag_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:66]
+INFO: [Synth 8-5544] ROM "frame_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "cmd_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "mode" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "channel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "value" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "P" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "allow_adjust" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "pid_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "pid_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "error_sum_1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mul_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CE" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "channel" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "channel" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "I_n" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AD_output" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "LD1_Current0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+              BEGIN_SEND |                              001 |                              001
+                   CLKUP |                              010 |                              010
+                WAIT_CLK |                              011 |                              100
+                 CLKDOWN |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'SPI_Master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             WAIT_CHANGE |                               00 |                              000
+           OPEN_OR_CLOSE |                               01 |                              010
+             CHANGE_VOLT |                               10 |                              001
+                  FINISH |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'DAC_state_reg' using encoding 'sequential' in module 'DAC_5676'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               WAIT_INIT |                            00001 |                              000
+        OPEN_ALL_CHANNEL |                            00010 |                              001
+         SET_ALL_CHANNEL |                            00100 |                              010
+           WAIT_SET_DONE |                            01000 |                              011
+             INIT_FINISH |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'DAC_init_state_reg' using encoding 'one-hot' in module 'DAC_5676'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                              000
+                 iSTATE0 |                             0010 |                              001
+                 iSTATE1 |                             0100 |                              010
+                 iSTATE2 |                             1000 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fifo_state_reg' using encoding 'one-hot' in module 'DAC_5676'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             WAIT_CHANGE |                               00 |                              000
+           OPEN_OR_CLOSE |                               01 |                              010
+             CHANGE_VOLT |                               10 |                              001
+                  FINISH |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'DAC_state_reg' using encoding 'sequential' in module 'DAC_5676__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               WAIT_INIT |                            00001 |                              000
+        OPEN_ALL_CHANNEL |                            00010 |                              001
+         SET_ALL_CHANNEL |                            00100 |                              010
+           WAIT_SET_DONE |                            01000 |                              011
+             INIT_FINISH |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'DAC_init_state_reg' using encoding 'one-hot' in module 'DAC_5676__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                              000
+                 iSTATE0 |                             0010 |                              001
+                 iSTATE1 |                             0100 |                              010
+                 iSTATE2 |                             1000 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fifo_state_reg' using encoding 'one-hot' in module 'DAC_5676__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+    WAIT_VOLTAGE_REFRESH |                              000 |                              000
+          SELECT_CHANNEL |                              001 |                              001
+        SELECT_PARAMETER |                              010 |                              010
+                WAIT_MUL |                              011 |                              011
+                  FINISH |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Change_state_reg' using encoding 'sequential' in module 'Voltage2Temp'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   RESET |                             0000 |                             0000
+                    IDLE |                             0001 |                             0001
+                 AD_CONV |                             0010 |                             0010
+                  Wait_1 |                             0011 |                             0011
+               Wait_busy |                             0100 |                             0100
+                READ_CH1 |                             0101 |                             0101
+                READ_CH2 |                             0110 |                             0110
+                READ_CH3 |                             0111 |                             0111
+                READ_CH4 |                             1000 |                             1000
+                READ_CH5 |                             1001 |                             1001
+                READ_CH6 |                             1010 |                             1010
+                READ_CH7 |                             1011 |                             1011
+                READ_CH8 |                             1100 |                             1100
+               READ_DONE |                             1101 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ad7606'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE0 |                              001 |                              001
+                 iSTATE1 |                              010 |                              010
+                 iSTATE2 |                              011 |                              011
+                 iSTATE3 |                              100 |                              100
+                 iSTATE4 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Uart_Output'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 818.820 ; gain = 508.711
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     40 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 9     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 2     
+	               32 Bit    Registers := 9     
+	               24 Bit    Registers := 5     
+	               17 Bit    Registers := 9     
+	               16 Bit    Registers := 58    
+	                8 Bit    Registers := 19    
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 55    
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 1     
+	   6 Input     40 Bit        Muxes := 1     
+	  16 Input     37 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 10    
+	   6 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 2     
+	   5 Input     24 Bit        Muxes := 2     
+	   4 Input     24 Bit        Muxes := 2     
+	  16 Input     23 Bit        Muxes := 1     
+	   4 Input     17 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 8     
+	   2 Input     16 Bit        Muxes := 23    
+	  10 Input     16 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 17    
+	   5 Input     16 Bit        Muxes := 5     
+	  14 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 35    
+	   5 Input      8 Bit        Muxes := 8     
+	  10 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 4     
+	   5 Input      6 Bit        Muxes := 2     
+	  10 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 20    
+	   7 Input      4 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 4     
+	   5 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	  11 Input      2 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 29    
+	   2 Input      1 Bit        Muxes := 112   
+	   5 Input      1 Bit        Muxes := 44    
+	  14 Input      1 Bit        Muxes := 20    
+	  11 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 27    
+	  16 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 32    
+	   7 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Control 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 12    
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	  10 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 11    
+	   5 Input      8 Bit        Muxes := 8     
+	  10 Input      8 Bit        Muxes := 4     
+	  10 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 6     
+	   7 Input      4 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 29    
+	   2 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 6     
+	  14 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+Module SPI_Master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input     24 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 9     
+Module DAC_5676 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 8     
+	                8 Bit    Registers := 5     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   4 Input     24 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 8     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 10    
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 20    
+	   8 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 4     
+Module DAC_5676__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 8     
+	                8 Bit    Registers := 5     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   4 Input     24 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 8     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 10    
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 20    
+	   8 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 4     
+Module Voltage2Temp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     40 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 1     
+	  16 Input     37 Bit        Muxes := 1     
+	  16 Input     23 Bit        Muxes := 1     
+	   4 Input     17 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 12    
+Module volt_cal 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 8     
++---Registers : 
+	               17 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 8     
+Module ad7606 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 9     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 5     
+	  14 Input     16 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	  14 Input      1 Bit        Muxes := 19    
+Module Uart_Output 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     40 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   6 Input     32 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 5     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module uart_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   6 Input      1 Bit        Muxes := 8     
+Module pid_contorl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               16 Bit    Registers := 14    
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   6 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 11    
+	   6 Input     16 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 6     
+	   6 Input      4 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 25    
+	   6 Input      1 Bit        Muxes := 19    
+	   7 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 8     
+Module test_current 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "set_P_I_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DAC_init_state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:52]
+INFO: [Synth 8-5546] ROM "DAC_init_state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:52]
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element uart_sub_1/uart_tx_inst/tx_done_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:26]
+INFO: [Synth 8-5546] ROM "uart_sub_1/uart_rx_inst/bit_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uart_sub_1/uart_tx_inst/bit_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cmd_valid" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element uart_sub_1/uart_rx_inst/baud_cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v:64]
+WARNING: [Synth 8-6014] Unused sequential element uart_sub_1/uart_rx_inst/bit_cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v:84]
+WARNING: [Synth 8-6014] Unused sequential element uart_sub_1/uart_tx_inst/bit_cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:64]
+WARNING: [Synth 8-6014] Unused sequential element uart_sub_1/uart_tx_inst/baud_cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:44]
+INFO: [Synth 8-5545] ROM "pid_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "channel" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "LD1_Current0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Uart_Output_new/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Uart_Output_new/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Uart_Output_new/state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Uart_Output_new/state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design test_current has unconnected port open_state[3]
+WARNING: [Synth 8-3331] design test_current has unconnected port open_state[2]
+WARNING: [Synth 8-3331] design test_current has unconnected port open_state[1]
+WARNING: [Synth 8-3331] design pid_contorl has unconnected port Open_state[3]
+WARNING: [Synth 8-3331] design pid_contorl has unconnected port Open_state[2]
+WARNING: [Synth 8-3331] design pid_contorl has unconnected port Open_state[1]
+WARNING: [Synth 8-3331] design pid_contorl has unconnected port Open_state[0]
+WARNING: [Synth 8-3331] design ad7606 has unconnected port first_data
+WARNING: [Synth 8-3331] design DAC_5676__parameterized0 has unconnected port MISO
+WARNING: [Synth 8-3331] design DAC_5676 has unconnected port MISO
+INFO: [Synth 8-3886] merging instance 'Voltage2Temp/b_reg[37]' (FDCE) to 'Voltage2Temp/b_reg[38]'
+INFO: [Synth 8-3886] merging instance 'Voltage2Temp/b_reg[38]' (FDCE) to 'Voltage2Temp/b_reg[39]'
+INFO: [Synth 8-3886] merging instance 'Voltage2Temp/b_reg[39]' (FDCE) to 'Voltage2Temp/W_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Voltage2Temp/\W_reg[23] )
+INFO: [Synth 8-3886] merging instance 'test_current/state_reg[1]' (FDCE) to 'test_current/state_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (test_current/\state_reg[2] )
+INFO: [Synth 8-3886] merging instance 'DAC_2/Channel_init_reg[0]' (FDCE) to 'DAC_2/Channel_init_reg[1]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Channel_init_reg[1]' (FDCE) to 'DAC_2/Channel_init_valid_reg'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Channel_init_reg[2]' (FDCE) to 'DAC_2/Channel_init_reg[3]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Channel_init_reg[3]' (FDCE) to 'DAC_2/Channel_init_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Channel_init_reg[4]' (FDCE) to 'DAC_2/Channel_init_reg[5]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Channel_init_reg[5]' (FDCE) to 'DAC_2/Channel_init_reg[6]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Channel_init_reg[6]' (FDCE) to 'DAC_2/Channel_init_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_2/\Channel_init_reg[7] )
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_change_init_reg[0]' (FDCE) to 'DAC_2/Volte_change_init_reg[1]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_change_init_reg[7]' (FDCE) to 'DAC_2/Volte_change_init_reg[2]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_change_init_reg[2]' (FDCE) to 'DAC_2/Volte_change_init_reg[3]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_change_init_reg[3]' (FDCE) to 'DAC_2/Volte_change_init_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_change_init_reg[4]' (FDCE) to 'DAC_2/Volte_change_init_reg[5]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_change_init_reg[5]' (FDCE) to 'DAC_2/Volte_change_init_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_2/\Volte_change_init_reg[6] )
+INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[0]' (FDCE) to 'test_current/LD1_Current_reg[15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Channel_init_reg[0]' (FDCE) to 'DAC_1/Channel_init_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[1]' (FDCE) to 'test_current/LD1_Current_reg[15]'
+INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[2]' (FDCE) to 'test_current/LD1_Current_reg[15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Channel_init_reg[1]' (FDCE) to 'DAC_1/Channel_init_reg[4]'
+INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[3]' (FDCE) to 'test_current/LD1_Current_reg[15]'
+INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[4]' (FDCE) to 'test_current/LD1_Current_reg[15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Channel_init_reg[2]' (FDCE) to 'DAC_1/Channel_init_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[5]' (FDCE) to 'test_current/LD1_Current_reg[15]'
+INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[6]' (FDCE) to 'test_current/LD1_Current_reg[15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Channel_init_reg[3]' (FDCE) to 'DAC_1/Channel_init_valid_reg'
+INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[7]' (FDCE) to 'test_current/LD1_Current_reg[15]'
+INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[8]' (FDCE) to 'test_current/LD1_Current_reg[15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Channel_init_reg[4]' (FDCE) to 'DAC_1/Channel_init_reg[5]'
+INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[9]' (FDCE) to 'test_current/LD1_Current_reg[15]'
+INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[10]' (FDCE) to 'test_current/LD1_Current_reg[15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Channel_init_reg[5]' (FDCE) to 'DAC_1/Channel_init_reg[6]'
+INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[11]' (FDCE) to 'test_current/LD1_Current_reg[15]'
+INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[12]' (FDCE) to 'test_current/LD1_Current_reg[15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Channel_init_reg[6]' (FDCE) to 'DAC_1/Channel_init_reg[7]'
+INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[13]' (FDCE) to 'test_current/LD1_Current_reg[15]'
+INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[14]' (FDCE) to 'test_current/LD1_Current_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_1/\Channel_init_reg[7] )
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_change_init_reg[0]' (FDCE) to 'DAC_1/Volte_change_init_reg[1]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_change_init_reg[7]' (FDCE) to 'DAC_1/Volte_change_init_reg[1]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_change_init_reg[1]' (FDCE) to 'DAC_1/Volte_change_init_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_change_init_reg[2]' (FDCE) to 'DAC_1/Volte_change_init_reg[3]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_change_init_reg[4]' (FDCE) to 'DAC_1/Volte_change_init_reg[5]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_change_init_reg[5]' (FDCE) to 'DAC_1/Volte_change_init_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_1/\Volte_change_init_reg[6] )
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[3][0]' (FDE) to 'DAC_2/Volte_reg_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[2][0]' (FDE) to 'DAC_2/Volte_reg_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[3][1]' (FDE) to 'DAC_2/Volte_reg_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[2][1]' (FDE) to 'DAC_2/Volte_reg_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[3][2]' (FDE) to 'DAC_2/Volte_reg_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[2][2]' (FDE) to 'DAC_2/Volte_reg_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[3][3]' (FDE) to 'DAC_2/Volte_reg_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[2][3]' (FDE) to 'DAC_2/Volte_reg_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[3][4]' (FDE) to 'DAC_2/Volte_reg_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[2][4]' (FDE) to 'DAC_2/Volte_reg_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[3][5]' (FDE) to 'DAC_2/Volte_reg_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[2][5]' (FDE) to 'DAC_2/Volte_reg_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[3][6]' (FDE) to 'DAC_2/Volte_reg_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[2][6]' (FDE) to 'DAC_2/Volte_reg_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[3][7]' (FDE) to 'DAC_2/Volte_reg_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[2][7]' (FDE) to 'DAC_2/Volte_reg_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[3][8]' (FDE) to 'DAC_2/Volte_reg_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[2][8]' (FDE) to 'DAC_2/Volte_reg_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[3][9]' (FDE) to 'DAC_2/Volte_reg_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[2][9]' (FDE) to 'DAC_2/Volte_reg_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[3][10]' (FDE) to 'DAC_2/Volte_reg_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[2][10]' (FDE) to 'DAC_2/Volte_reg_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[3][11]' (FDE) to 'DAC_2/Volte_reg_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[2][11]' (FDE) to 'DAC_2/Volte_reg_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[3][12]' (FDE) to 'DAC_2/Volte_reg_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[2][12]' (FDE) to 'DAC_2/Volte_reg_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[3][13]' (FDE) to 'DAC_2/Volte_reg_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[2][13]' (FDE) to 'DAC_2/Volte_reg_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[3][14]' (FDE) to 'DAC_2/Volte_reg_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_reg_reg[2][14]' (FDE) to 'DAC_2/Volte_reg_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[1][0]' (FDE) to 'DAC_1/Volte_reg_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[0][0]' (FDE) to 'DAC_1/Volte_reg_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[1][1]' (FDE) to 'DAC_1/Volte_reg_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[0][1]' (FDE) to 'DAC_1/Volte_reg_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[1][2]' (FDE) to 'DAC_1/Volte_reg_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[0][2]' (FDE) to 'DAC_1/Volte_reg_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[1][3]' (FDE) to 'DAC_1/Volte_reg_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[0][3]' (FDE) to 'DAC_1/Volte_reg_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[1][4]' (FDE) to 'DAC_1/Volte_reg_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[0][4]' (FDE) to 'DAC_1/Volte_reg_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[1][5]' (FDE) to 'DAC_1/Volte_reg_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[0][5]' (FDE) to 'DAC_1/Volte_reg_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[1][6]' (FDE) to 'DAC_1/Volte_reg_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[0][6]' (FDE) to 'DAC_1/Volte_reg_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[1][7]' (FDE) to 'DAC_1/Volte_reg_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[0][7]' (FDE) to 'DAC_1/Volte_reg_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[1][8]' (FDE) to 'DAC_1/Volte_reg_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[0][8]' (FDE) to 'DAC_1/Volte_reg_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[1][9]' (FDE) to 'DAC_1/Volte_reg_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[0][9]' (FDE) to 'DAC_1/Volte_reg_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[1][10]' (FDE) to 'DAC_1/Volte_reg_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[0][10]' (FDE) to 'DAC_1/Volte_reg_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[1][11]' (FDE) to 'DAC_1/Volte_reg_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[0][11]' (FDE) to 'DAC_1/Volte_reg_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[1][12]' (FDE) to 'DAC_1/Volte_reg_reg[1][15]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Uart_Output_new/Out_data_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_2/\cmd_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_1/\cmd_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_2/\Release_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_1/\Release_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_2/\Volte_reg_reg[3][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_2/\Volte_reg_reg[2][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_1/\Volte_reg_reg[1][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_1/\Volte_reg_reg[0][15] )
+WARNING: [Synth 8-3332] Sequential element (LD1_Current_valid_reg) is unused and will be removed from module Control.
+WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[15]) is unused and will be removed from module Control.
+WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[14]) is unused and will be removed from module Control.
+WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[13]) is unused and will be removed from module Control.
+WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[12]) is unused and will be removed from module Control.
+WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[11]) is unused and will be removed from module Control.
+WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[10]) is unused and will be removed from module Control.
+WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[9]) is unused and will be removed from module Control.
+WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[8]) is unused and will be removed from module Control.
+WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[7]) is unused and will be removed from module Control.
+WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[6]) is unused and will be removed from module Control.
+WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[5]) is unused and will be removed from module Control.
+WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[4]) is unused and will be removed from module Control.
+WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[3]) is unused and will be removed from module Control.
+WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[2]) is unused and will be removed from module Control.
+WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[1]) is unused and will be removed from module Control.
+WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[0]) is unused and will be removed from module Control.
+WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[1]) is unused and will be removed from module DAC_5676.
+WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[0]) is unused and will be removed from module DAC_5676.
+WARNING: [Synth 8-3332] Sequential element (Volte_change_init_reg[6]) is unused and will be removed from module DAC_5676.
+WARNING: [Synth 8-3332] Sequential element (Release_reg[0]) is unused and will be removed from module DAC_5676.
+WARNING: [Synth 8-3332] Sequential element (Volte_reg_reg[0][15]) is unused and will be removed from module DAC_5676.
+WARNING: [Synth 8-3332] Sequential element (Volte_reg_reg[1][15]) is unused and will be removed from module DAC_5676.
+WARNING: [Synth 8-3332] Sequential element (Channel_init_reg[7]) is unused and will be removed from module DAC_5676.
+WARNING: [Synth 8-3332] Sequential element (cmd_reg[23]) is unused and will be removed from module DAC_5676.
+WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[3]) is unused and will be removed from module DAC_5676__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[2]) is unused and will be removed from module DAC_5676__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (Volte_change_init_reg[6]) is unused and will be removed from module DAC_5676__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (Release_reg[2]) is unused and will be removed from module DAC_5676__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (Volte_reg_reg[2][15]) is unused and will be removed from module DAC_5676__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (Volte_reg_reg[3][15]) is unused and will be removed from module DAC_5676__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (Channel_init_reg[7]) is unused and will be removed from module DAC_5676__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (cmd_reg[23]) is unused and will be removed from module DAC_5676__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (W_reg[23]) is unused and will be removed from module Voltage2Temp.
+WARNING: [Synth 8-3332] Sequential element (volt_cal_1/Volt_1_reg[15]) is unused and will be removed from module ad7606.
+WARNING: [Synth 8-3332] Sequential element (volt_cal_1/Volt_2_reg[15]) is unused and will be removed from module ad7606.
+WARNING: [Synth 8-3332] Sequential element (volt_cal_1/Volt_7_reg[15]) is unused and will be removed from module ad7606.
+WARNING: [Synth 8-3332] Sequential element (volt_cal_1/Volt_8_reg[15]) is unused and will be removed from module ad7606.
+WARNING: [Synth 8-3332] Sequential element (Uart_Output_new/Out_data_reg[39]) is unused and will be removed from module Multi_Channel_top.
+WARNING: [Synth 8-3332] Sequential element (state_reg[2]) is unused and will be removed from module test_current.
+WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[6]_P) is unused and will be removed from module DAC_5676.
+WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[5]_P) is unused and will be removed from module DAC_5676.
+WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[4]_P) is unused and will be removed from module DAC_5676.
+WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[3]_P) is unused and will be removed from module DAC_5676.
+WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[2]_P) is unused and will be removed from module DAC_5676.
+WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[6]_P) is unused and will be removed from module DAC_5676__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[5]_P) is unused and will be removed from module DAC_5676__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[4]_P) is unused and will be removed from module DAC_5676__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[1]_P) is unused and will be removed from module DAC_5676__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[0]_P) is unused and will be removed from module DAC_5676__parameterized0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 818.820 ; gain = 508.711
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 831.930 ; gain = 521.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 836.207 ; gain = 526.098
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 889.254 ; gain = 579.145
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 889.254 ; gain = 579.145
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 889.254 ; gain = 579.145
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 889.254 ; gain = 579.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 889.254 ; gain = 579.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 889.254 ; gain = 579.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 889.254 ; gain = 579.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |DAC_fifo           |         2|
+|2     |MULTI_Voltage2temp |         1|
+|3     |PID_SUB            |         1|
+|4     |PID_adder          |         1|
+|5     |Mul_P              |         1|
+|6     |Mul_PID            |         1|
+|7     |uart_send_fifo     |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |DAC_fifo           |     1|
+|2     |DAC_fifo__1        |     1|
+|3     |MULTI_Voltage2temp |     1|
+|4     |Mul_P              |     1|
+|5     |Mul_PID            |     1|
+|6     |PID_SUB            |     1|
+|7     |PID_adder          |     1|
+|8     |uart_send_fifo     |     1|
+|9     |BUFG               |     1|
+|10    |CARRY4             |    90|
+|11    |LUT1               |   196|
+|12    |LUT2               |   365|
+|13    |LUT3               |   393|
+|14    |LUT4               |   271|
+|15    |LUT5               |   233|
+|16    |LUT6               |   533|
+|17    |MUXF7              |     1|
+|18    |FDCE               |  1213|
+|19    |FDPE               |    98|
+|20    |FDRE               |   523|
+|21    |LDC                |    64|
+|22    |IBUF               |    20|
+|23    |OBUF               |    18|
++------+-------------------+------+
+
+Report Instance Areas: 
++------+-------------------+-------------------------+------+
+|      |Instance           |Module                   |Cells |
++------+-------------------+-------------------------+------+
+|1     |top                |                         |  4345|
+|2     |  AD7606_1         |ad7606                   |   704|
+|3     |    volt_cal_1     |volt_cal                 |   437|
+|4     |  Control_new      |Control                  |   527|
+|5     |  DAC_1            |DAC_5676                 |   366|
+|6     |    SPI_Master_new |SPI_Master_0             |    82|
+|7     |  DAC_2            |DAC_5676__parameterized0 |   384|
+|8     |    SPI_Master_new |SPI_Master               |    82|
+|9     |  Uart_Output_new  |Uart_Output              |   132|
+|10    |  Voltage2Temp     |Voltage2Temp             |   561|
+|11    |  test_current     |test_current             |    87|
+|12    |  u_pid_contorl    |pid_contorl              |  1099|
+|13    |  uart_top_new     |uart_top                 |   446|
+|14    |    uart_sub_1     |uart_sub                 |   209|
+|15    |      uart_rx_inst |uart_rx                  |   147|
+|16    |      uart_tx_inst |uart_tx                  |    62|
++------+-------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 889.254 ; gain = 579.145
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 75 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 889.254 ; gain = 243.590
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 889.254 ; gain = 579.145
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 175 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  LDC => LDCE: 64 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+364 Infos, 127 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 889.254 ; gain = 590.957
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/Multi_Channel_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Multi_Channel_top_utilization_synth.rpt -pb Multi_Channel_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 889.254 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May 10 20:02:51 2023...

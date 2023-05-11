@@ -1,0 +1,7 @@
+Running: xsim.dir/test_dac_behav/xsimk.exe -simmode gui -wdb test_dac_behav.wdb -simrunnum 0 -socket 49440
+Design successfully loaded
+Design Loading Memory Usage: 8740 KB (Peak: 8740 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 17948 KB (Peak: 17948 KB)
+Simulation CPU Usage: 3952 ms

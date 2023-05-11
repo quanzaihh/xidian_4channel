@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun May  7 20:34:03 2023
+# Process ID: 98616
+# Current directory: C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/PID_adder_synth_1
+# Command line: vivado.exe -log PID_adder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PID_adder.tcl
+# Log file: C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/PID_adder_synth_1/PID_adder.vds
+# Journal file: C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/PID_adder_synth_1\vivado.jou
+#-----------------------------------------------------------
+source PID_adder.tcl -notrace

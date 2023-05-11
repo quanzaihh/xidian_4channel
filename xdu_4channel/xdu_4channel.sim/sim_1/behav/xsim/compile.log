@@ -1,0 +1,46 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/ip/DAC_fifo/sim/DAC_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DAC_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/ip/uart_send_fifo/sim/uart_send_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_send_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:196]
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:238]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DAC_5676
+WARNING: [VRFC 10-756] identifier Volte_change_reg is used before its declaration [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:81]
+INFO: [VRFC 10-311] analyzing module SPI_Master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/Uart_Output.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Uart_Output
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Voltage2Temp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/ADC/ad7606.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad7606
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_sub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_sub
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/ADC/volt_cal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module volt_cal
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multi_Channel_top
+INFO: [VRFC 10-2458] undeclared symbol target_Temp, assumed default net type wire [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:249]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pid_contorl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_temp
+INFO: [VRFC 10-311] analyzing module test_current
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sim_1/new/test_dac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_dac
+INFO: [VRFC 10-2458] undeclared symbol AD_temp_1, assumed default net type wire [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sim_1/new/test_dac.v:375]
+INFO: [VRFC 10-2458] undeclared symbol AD_temp_2, assumed default net type wire [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sim_1/new/test_dac.v:376]
+INFO: [VRFC 10-2458] undeclared symbol AD_temp_3, assumed default net type wire [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sim_1/new/test_dac.v:377]
+INFO: [VRFC 10-2458] undeclared symbol AD_temp_4, assumed default net type wire [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sim_1/new/test_dac.v:378]
+INFO: [VRFC 10-2458] undeclared symbol AD_temp_valid1, assumed default net type wire [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sim_1/new/test_dac.v:379]
+INFO: [VRFC 10-2458] undeclared symbol AD_temp_valid2, assumed default net type wire [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sim_1/new/test_dac.v:380]
+INFO: [VRFC 10-2458] undeclared symbol AD_temp_valid3, assumed default net type wire [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sim_1/new/test_dac.v:381]
+INFO: [VRFC 10-2458] undeclared symbol AD_temp_valid4, assumed default net type wire [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sim_1/new/test_dac.v:382]

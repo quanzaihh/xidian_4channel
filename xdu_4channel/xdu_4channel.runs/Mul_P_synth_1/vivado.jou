@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Apr  9 13:10:01 2023
+# Process ID: 27376
+# Current directory: C:/Users/quanzai/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/Mul_P_synth_1
+# Command line: vivado.exe -log Mul_P.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Mul_P.tcl
+# Log file: C:/Users/quanzai/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/Mul_P_synth_1/Mul_P.vds
+# Journal file: C:/Users/quanzai/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/Mul_P_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Mul_P.tcl -notrace

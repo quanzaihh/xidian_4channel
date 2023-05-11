@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../xdu_4channel.srcs/sources_1/ip/Mul_PID/sim/Mul_PID.vhd" \
+"../../../../xdu_4channel.srcs/sources_1/ip/Mul_P/sim/Mul_P.vhd" \
+"../../../../xdu_4channel.srcs/sources_1/ip/PID_adder/sim/PID_adder.vhd" \
+"../../../../xdu_4channel.srcs/sources_1/ip/PID_SUB/sim/PID_SUB.vhd" \
+"../../../../xdu_4channel.srcs/sources_1/ip/MULTI_Voltage2temp/sim/MULTI_Voltage2temp.vhd" \
+
+# Do not sort compile order
+nosort

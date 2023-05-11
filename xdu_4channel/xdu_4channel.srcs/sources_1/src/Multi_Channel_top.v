@@ -54,7 +54,7 @@ wire 		TEC1_valid;
 wire 		TEC2_valid;
 wire 		TEC3_valid;
 wire 		TEC4_valid;
-wire [15:0] TEC1;
+(* keep = "true" *)wire [15:0] TEC1;
 wire [15:0] TEC2;
 wire [15:0] TEC3;
 wire [15:0] TEC4;
@@ -64,7 +64,7 @@ wire 		DAC1_Channel_en_valid;
 wire 		DAC2_Channel_en_valid;
 wire [3:0]	Channel_state;
 
-wire [15:0]	TEC_Temp1;
+(* keep = "true" *)wire [15:0]	TEC_Temp1;
 wire [15:0]	TEC_Temp2;
 wire [15:0]	TEC_Temp3;
 wire [15:0]	TEC_Temp4;
@@ -84,8 +84,12 @@ wire 		data_refresh;
 wire [3:0]	channel_state;
 wire 		cmd_full;
 
-wire [3:0]	change_target_temp;
-wire [15:0] target_temp;
+(* keep = "true" *)wire [3:0]	change_target_temp;
+(* keep = "true" *)wire [15:0]  Target_Temp;
+
+wire [1:0]	set_P_I_valid;
+wire [15:0]	set_P;
+wire [15:0]	set_I;
 
 
 Control Control_new(
@@ -113,7 +117,7 @@ Control Control_new(
 	.LD4_Current					(LD4_Current),
 
 	.change_target_temp				(change_target_temp),
-	.target_temp					(target_temp),
+	.target_temp					(Target_Temp),
 
 	.DAC1_Channel_en				(DAC1_Channel_en),
 	.DAC1_Channel_en_valid			(DAC1_Channel_en_valid),
@@ -122,7 +126,10 @@ Control Control_new(
 
 	.cmd							(cmd),
 	.cmd_valid						(cmd_valid),
-	.channel_state					(channel_state)
+	.channel_state					(channel_state),
+	.set_P_I_valid 					(set_P_I_valid),
+	.set_P							(set_P),
+	.set_I							(set_I)
 );	
 
 // DAC1控制Channel1和Channel2，一共有8个DA出口，前两个空置，3，4控制TEC1和TEC2，5，6控制LD1和LD2的电压，7，8控制LD1和LD2的电流
@@ -246,7 +253,7 @@ uart_top uart_top_new(
 pid_contorl  u_pid_contorl (
     .clk                     ( clk                   ),
     .rst_n                   ( rst_n                 ),
-    .target_Temp             ( target_Temp           ),
+    .target_Temp             ( Target_Temp           ),
     .change_target_temp      ( change_target_temp    ),
     .ac_temp1                ( TEC_Temp1             ),
     .ac_temp2                ( TEC_Temp2             ),
@@ -261,7 +268,11 @@ pid_contorl  u_pid_contorl (
     .AD_temp_valid1          ( TEC1_valid	         ),
     .AD_temp_valid2          ( TEC2_valid        	 ),
     .AD_temp_valid3          ( TEC3_valid        	 ),
-    .AD_temp_valid4          ( TEC4_valid        	 )	
+    .AD_temp_valid4          ( TEC4_valid        	 ),
+
+	.set_P_I_valid 			 ( set_P_I_valid		 ),
+	.set_P					 ( set_P 				 ),
+	.set_I					 ( set_I 				 )	
 );
 
 // test test(

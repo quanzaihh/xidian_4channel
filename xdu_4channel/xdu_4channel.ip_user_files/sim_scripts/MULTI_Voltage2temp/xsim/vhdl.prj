@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../xdu_4channel.srcs/sources_1/ip/MULTI_Voltage2temp/sim/MULTI_Voltage2temp.vhd" \
+
+nosort

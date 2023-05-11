@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon May  1 18:02:06 2023
+# Process ID: 340
+# Current directory: C:/Users/quanzai/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/PID_SUB_synth_1
+# Command line: vivado.exe -log PID_SUB.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PID_SUB.tcl
+# Log file: C:/Users/quanzai/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/PID_SUB_synth_1/PID_SUB.vds
+# Journal file: C:/Users/quanzai/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/PID_SUB_synth_1\vivado.jou
+#-----------------------------------------------------------
+source PID_SUB.tcl -notrace

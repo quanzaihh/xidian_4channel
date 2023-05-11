@@ -1,0 +1,35 @@
+$date
+        2023-May-09 22:40:33
+$end
+$version
+        Vivado v2017.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 16 " TEC1 [15:0] $end
+$var reg 16 2 Target_Temp [15:0] $end
+$var reg 4 B change_target_temp [3:0] $end
+$var reg 16 F u_pid_contorl/Target_Temp1 [15:0] $end
+$var reg 16 V u_pid_contorl/AD_output [15:0] $end
+$var reg 16 f u_ila_0_error [15:0] $end
+$var reg 1 v _TRIGGER $end
+$var reg 1 w _WINDOW $end
+$var reg 1 x _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1000000000000000 "
+b0 2
+b0 B
+b1100100000000 F
+b1000000000000000 V
+b1111111000000010 f
+0v
+1w
+0x
+$end
+#512
+1v

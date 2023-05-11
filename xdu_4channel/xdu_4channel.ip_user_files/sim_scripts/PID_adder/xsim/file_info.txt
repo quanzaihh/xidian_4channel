@@ -1,0 +1,2 @@
+PID_adder.vhd,vhdl,xil_defaultlib,../../../../xdu_4channel.srcs/sources_1/ip/PID_adder/sim/PID_adder.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

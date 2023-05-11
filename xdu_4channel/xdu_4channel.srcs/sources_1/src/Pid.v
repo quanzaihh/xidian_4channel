@@ -37,38 +37,72 @@ module pid_contorl(
     output  reg         AD_temp_valid2,
     output  reg         AD_temp_valid3,
     output  reg         AD_temp_valid4,
-    input   [3:0]       Open_state
+    input   [3:0]       Open_state,
+
+    input   [1:0]	    set_P_I_valid,
+	input   [15:0]	    set_P,
+	input   [15:0]	    set_I
 );
 
-parameter P = 16'd29884;
-parameter I = 16'd23199;
+(* keep = "true" *)reg [15:0]  P;
+(* keep = "true" *)reg [15:0]  I;
+always @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+        P <= 16'd7000;
+        I <= 16'd200;
+    end
+    else if (set_P_I_valid==2'b01) begin
+        P <= set_P;
+    end
+    else if (set_P_I_valid==2'b10) begin
+        I <= set_I;
+    end
+end
+
+// parameter P = 16'd5000;
+// parameter I = 16'd0;
+parameter ERROR_MAX = 2;
 
 /*-------------------------------------- PID -----------------------------------*/
-reg [15:0]  Target_Temp1;
-reg [15:0]  Target_Temp2;
-reg [15:0]  Target_Temp3;
-reg [15:0]  Target_Temp4;
+(* keep = "true" *)reg [15:0]  Target_Temp1/* synthesis syn_keep=1 */;
+(* keep = "true" *)reg [15:0]  Target_Temp2/* synthesis syn_keep=1 */;
+(* keep = "true" *)reg [15:0]  Target_Temp3/* synthesis syn_keep=1 */;
+(* keep = "true" *)reg [15:0]  Target_Temp4/* synthesis syn_keep=1 */;
 reg         CE;
 reg [15:0]  target;
 reg [15:0]  now_value;
-wire[15:0]  error;
+(* keep = "true" *)wire[15:0]  error/* synthesis syn_keep=1 */;
 wire[31:0]  sum_error;
-wire[31:0]  P_mul;
-wire[47:0]  PID_out;
+(* keep = "true" *)wire[31:0]  P_mul;
+(* keep = "true" *)wire[47:0]  PID_out;
+reg [3:0]   allow_adjust;
 // 改变温度预设值
 always@(posedge clk or negedge rst_n)begin
     if (!rst_n) begin
-        Target_Temp1 <= 16'b0;
-        Target_Temp2 <= 16'b0;
-        Target_Temp3 <= 16'b0;
-        Target_Temp4 <= 16'b0;
+        Target_Temp1 <= 16'h1900;
+        Target_Temp2 <= 16'h1900;
+        Target_Temp3 <= 16'h1900;
+        Target_Temp4 <= 16'h1900;
+        allow_adjust <= 4'b0000;
     end
     else if (change_target_temp!=0) begin
         case(change_target_temp)
-            4'b0001:Target_Temp1 <= target_Temp;
-            4'b0010:Target_Temp2 <= target_Temp;
-            4'b0100:Target_Temp3 <= target_Temp;
-            4'b1000:Target_Temp4 <= target_Temp;
+            4'b0001:begin
+                Target_Temp1 <= target_Temp;
+                allow_adjust[0]<=1'b1;
+            end
+            4'b0010:begin
+                Target_Temp2 <= target_Temp;
+                allow_adjust[1]<=1'b1;
+            end
+            4'b0100:begin
+                Target_Temp3 <= target_Temp;
+                allow_adjust[2]<=1'b1;
+            end
+            4'b1000:begin
+                Target_Temp4 <= target_Temp;
+                allow_adjust[3]<=1'b1;
+            end
         endcase
     end
 end
@@ -77,12 +111,13 @@ end
 reg [2:0]   channel;
 reg [3:0]   mul_cnt;
 reg [31:0]  cnt;
-reg [31:0]  error_sum_1;
+(* keep = "true" *)reg [31:0]  error_sum_1;
 reg [31:0]  error_sum_2;
 reg [31:0]  error_sum_3;
 reg [31:0]  error_sum_4;
-reg [31:0]  AD_output;
+(* keep = "true" *)reg [15:0]  AD_output;
 reg [31:0]  sum_error_n;
+reg [15:0]  I_n;
 
 reg [3:0]   pid_state/* synthesis keep */;          // PID状态机
 parameter   WAIT_TIME       = 0;
@@ -114,11 +149,12 @@ always@(posedge clk or negedge rst_n)begin
         target <= 0;
         now_value <= 0;
         channel <= 0;
+        I_n <= 0;
     end
     else begin
         case(pid_state)
             WAIT_TIME:begin
-                if (cnt==32'd5_000) begin
+                if (cnt==32'd10_000_000) begin
                     pid_state <= SELETC_CHANNEL;
                     channel <= 0;
                     cnt <= 0;
@@ -140,7 +176,7 @@ always@(posedge clk or negedge rst_n)begin
                 else begin
                     case(channel)
                         0:begin
-                            if (Open_state[0]) begin
+                            if (allow_adjust[0]) begin
                                 target <= Target_Temp1;
                                 now_value <= ac_temp1;
                                 sum_error_n <= error_sum_1;
@@ -155,7 +191,7 @@ always@(posedge clk or negedge rst_n)begin
                         end
 
                         1:begin
-                            if (Open_state[1]) begin
+                            if (allow_adjust[1]) begin
                                 target <= Target_Temp2;
                                 now_value <= ac_temp2;
                                 sum_error_n <= error_sum_2;
@@ -170,7 +206,7 @@ always@(posedge clk or negedge rst_n)begin
                         end
 
                         2:begin
-                            if (Open_state[2]) begin
+                            if (allow_adjust[2]) begin
                                 target <= Target_Temp3;
                                 now_value <= ac_temp3;
                                 sum_error_n <= error_sum_3;
@@ -185,7 +221,7 @@ always@(posedge clk or negedge rst_n)begin
                         end    
 
                         3:begin
-                            if (Open_state[3]) begin
+                            if (allow_adjust[3]) begin
                                 target <= Target_Temp4;
                                 now_value <= ac_temp4;
                                 sum_error_n <= error_sum_4;
@@ -206,13 +242,13 @@ always@(posedge clk or negedge rst_n)begin
             JUDGE:begin
                 if (mul_cnt==2) begin
                     mul_cnt <= 0;
-                    // if (error>(target>>2)) begin
-                    //     pid_state <= FINISH;
-                    //     AD_output <= (error[15])?16'h0000:16'hffff;
+                    // if (error<16'h0100||error>16'hfeff) begin
+                    //     I_n <= I;
                     // end
                     // else begin
-                    //     pid_state <= WAIT_FOR_CUL;
+                    //     I_n <= 0;
                     // end
+                    I_n <= I;
                     pid_state <= WAIT_FOR_CUL;
                 end
                 else begin
@@ -222,12 +258,25 @@ always@(posedge clk or negedge rst_n)begin
 
             WAIT_FOR_CUL:begin
                 if (mul_cnt==8) begin
-                    if (^PID_out[46:23]==0)begin
+                    // 先不用pid吧
+                    if (PID_out==48'd0) begin
+                        AD_output <= 16'h8000;
+                    end
+                    else if (PID_out[47:23]==25'h0000000||PID_out[47:23]==25'h1ffffff)begin
                         AD_output <= {PID_out[47],~PID_out[22:8]+1'b1};
                     end
                     else begin
                         AD_output <= (PID_out[47])?16'hffff:16'h0000;
                     end
+                    // if (error<16'hfffa&&error[15]==1) begin
+                    //     AD_output <= 16'hffff;
+                    // end
+                    // else if (error>16'h0005&&error[15]==0) begin
+                    //     AD_output <= 16'h0000;
+                    // end
+                    // else begin
+                    //     AD_output <= 16'h8000;
+                    // end
                     pid_state <= FINISH;
                     mul_cnt <= 0;
                 end
@@ -241,25 +290,66 @@ always@(posedge clk or negedge rst_n)begin
                     0:begin
                         AD_temp_1 <= AD_output;
                         AD_temp_valid1 <= 1'b1;
+                        // if (error<16'h0100||error>16'hfeff) begin
+                        //     if (sum_error < ERROR_MAX) begin
+                        //         error_sum_1 <= sum_error;
+                        //     end
+                        //     else begin
+                        //         error_sum_1 <= ERROR_MAX;
+                        //     end
+                        // end
+                        // else begin
+                        //     error_sum_1 <= 0;
+                        // end
                         error_sum_1 <= sum_error;
                     end
 
                     1:begin
                         AD_temp_2 <= AD_output;
                         AD_temp_valid2 <= 1'b1;
-                        error_sum_2 <= sum_error;
+                        if (error<16'h0100||error>16'hfeff) begin
+                            if (sum_error < ERROR_MAX) begin
+                                error_sum_2 <= sum_error;
+                            end
+                            else begin
+                                error_sum_2 <= ERROR_MAX;
+                            end
+                        end
+                        else begin
+                            error_sum_2 <= 0;
+                        end
                     end
 
                     2:begin
                         AD_temp_3 <= AD_output;
                         AD_temp_valid3 <= 1'b1;
-                        error_sum_3 <= sum_error;
+                        if (error<16'h0100||error>16'hfeff) begin
+                            if (sum_error < ERROR_MAX) begin
+                                error_sum_3 <= sum_error;
+                            end
+                            else begin
+                                error_sum_3 <= ERROR_MAX;
+                            end
+                        end
+                        else begin
+                            error_sum_3 <= 0;
+                        end
                     end
 
                     3:begin
                         AD_temp_4 <= AD_output;
                         AD_temp_valid4 <= 1'b1;
-                        error_sum_4 <= sum_error;
+                        if (error<16'h0100||error>16'hfeff) begin
+                            if (sum_error < ERROR_MAX) begin
+                                error_sum_4 <= sum_error;
+                            end
+                            else begin
+                                error_sum_4 <= ERROR_MAX;
+                            end
+                        end
+                        else begin
+                            error_sum_4 <= 0;
+                        end
                     end
                 endcase
                 CE <= 1'b0;
@@ -301,9 +391,9 @@ Mul_PID Mul_PID_I(
   .CLK          (clk),
   .CE           (CE),
   .SCLR         (!rst_n),
-  .A            (I),
+  .A            (I_n),
   .B            (sum_error),
-  .C            ({16'd0, P_mul}),
+  .C            ({{16{P_mul[31]}}, P_mul}),
   .SUBTRACT     (1'b0),
   .P            (PID_out)
 );

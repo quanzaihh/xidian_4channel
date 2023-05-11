@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="PID_SUB_synth_1" LaunchPart="xc7a35tfgg484-2" LaunchTime="1682935323">
+  <File Type="PA-TCL" Name="PID_SUB.tcl"/>
+  <File Type="REPORTS-TCL" Name="PID_SUB_reports.tcl"/>
+  <File Type="RDS-RDS" Name="PID_SUB.vds"/>
+  <File Type="RDS-UTIL" Name="PID_SUB_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="PID_SUB_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="PID_SUB.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/PID_SUB">
+    <File Path="$PSRCDIR/sources_1/ip/PID_SUB/PID_SUB.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="PID_SUB"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/PID_SUB">
+    <File Path="$PSRCDIR/sources_1/ip/PID_SUB/PID_SUB.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="PID_SUB"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,89 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 40b3ca1d81434595953ff9c554a63f94 --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_1 -L xil_defaultlib -L xbip_utils_v3_0_8 -L xbip_pipe_v3_0_4 -L xbip_bram18k_v3_0_4 -L mult_gen_v12_0_13 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_4 -L xbip_dsp48_multadd_v3_0_4 -L xbip_multadd_v3_0_11 -L c_reg_fd_v12_0_4 -L xbip_addsub_v3_0_4 -L c_addsub_v12_0_11 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_dac_behav xil_defaultlib.test_dac xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 16 for port AD_temp_1 [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sim_1/new/test_dac.v:375]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 16 for port AD_temp_2 [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sim_1/new/test_dac.v:376]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 16 for port AD_temp_3 [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sim_1/new/test_dac.v:377]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 16 for port AD_temp_4 [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sim_1/new/test_dac.v:378]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_addsub_v12_0_11.c_addsub_v12_0_11_viv_comp
+Compiling package xbip_utils_v3_0_8.xbip_utils_v3_0_8_pkg
+Compiling package xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv_comp
+Compiling package xbip_addsub_v3_0_4.xbip_addsub_v3_0_4_viv_comp
+Compiling package c_addsub_v12_0_11.c_addsub_v12_0_11_pkg
+Compiling package c_addsub_v12_0_11.c_addsub_v12_0_11_pkg_legacy
+Compiling package c_reg_fd_v12_0_4.c_reg_fd_v12_0_4_viv_comp
+Compiling package unisim.vcomponents
+Compiling package mult_gen_v12_0_13.mult_gen_v12_0_13_viv_comp
+Compiling package mult_gen_v12_0_13.mult_gen_v12_0_13_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package mult_gen_v12_0_13.dsp_pkg
+Compiling package xbip_multadd_v3_0_11.xbip_multadd_v3_0_11_viv_comp
+Compiling package xbip_multadd_v3_0_11.xbip_multadd_v3_0_11_pkg
+Compiling package xbip_dsp48_multadd_v3_0_4.xbip_dsp48_multadd_v3_0_4_viv_co...
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xbip_dsp48_addsub_v3_0_4.xbip_dsp48_addsub_v3_0_4_viv_com...
+Compiling package xbip_dsp48_addsub_v3_0_4.xbip_dsp48_addsub_v3_0_4_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling architecture structural of entity c_reg_fd_v12_0_4.c_reg_fd_v12_0_4_viv [\c_reg_fd_v12_0_4_viv(c_width=16...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity c_addsub_v12_0_11.c_addsub_v12_0_11_lut6_legacy [\c_addsub_v12_0_11_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_11.c_addsub_v12_0_11_fabric_legacy [\c_addsub_v12_0_11_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_11.c_addsub_v12_0_11_legacy [\c_addsub_v12_0_11_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_11.c_addsub_v12_0_11_viv [\c_addsub_v12_0_11_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_11.c_addsub_v12_0_11 [\c_addsub_v12_0_11(c_xdevicefami...]
+Compiling architecture pid_sub_arch of entity xil_defaultlib.PID_SUB [pid_sub_default]
+Compiling architecture structural of entity c_reg_fd_v12_0_4.c_reg_fd_v12_0_4_viv [\c_reg_fd_v12_0_4_viv(c_width=32...]
+Compiling architecture rtl of entity c_addsub_v12_0_11.c_addsub_v12_0_11_lut6_legacy [\c_addsub_v12_0_11_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_11.c_addsub_v12_0_11_fabric_legacy [\c_addsub_v12_0_11_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_11.c_addsub_v12_0_11_legacy [\c_addsub_v12_0_11_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_11.c_addsub_v12_0_11_viv [\c_addsub_v12_0_11_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_11.c_addsub_v12_0_11 [\c_addsub_v12_0_11(c_xdevicefami...]
+Compiling architecture pid_adder_arch of entity xil_defaultlib.PID_adder [pid_adder_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.op_resize [\op_resize(ao_width=25)\]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.dsp [\dsp(c_xdevicefamily="artix7",c_...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.mult_gen_v12_0_13_viv [\mult_gen_v12_0_13_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.mult_gen_v12_0_13 [\mult_gen_v12_0_13(c_xdevicefami...]
+Compiling architecture mul_p_arch of entity xil_defaultlib.Mul_P [mul_p_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,carryinreg...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(a_input="CASCADE",bcasc...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.op_resize [\op_resize(bi_width=32,ao_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.dsp [\dsp(c_xdevicefamily="artix7",c_...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.mult_gen_v12_0_13_viv [\mult_gen_v12_0_13_viv(c_verbosi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_latency=...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,dreg=0,inmodere...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(areg=...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_4.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_4.xbip_dsp48_addsub_v3_0_4_viv [\xbip_dsp48_addsub_v3_0_4_viv(c_...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_4.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_4.xbip_dsp48_addsub_v3_0_4_viv [\xbip_dsp48_addsub_v3_0_4_viv(c_...]
+Compiling architecture addsub of entity xbip_multadd_v3_0_11.addsub_dsp [\addsub_dsp(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity xbip_multadd_v3_0_11.multadd_dsp [\multadd_dsp(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_multadd_v3_0_11.xbip_multadd_v3_0_11_viv [\xbip_multadd_v3_0_11_viv(c_xdev...]
+Compiling architecture xilinx of entity xbip_multadd_v3_0_11.xbip_multadd_v3_0_11 [\xbip_multadd_v3_0_11(c_xdevicef...]
+Compiling architecture mul_pid_arch of entity xil_defaultlib.Mul_PID [mul_pid_default]
+Compiling module xil_defaultlib.pid_contorl
+Compiling module xil_defaultlib.test_dac
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_dac_behav

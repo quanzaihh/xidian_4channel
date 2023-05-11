@@ -1,0 +1,26 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.sim/sim_1/behav/xsim/glbl.v,1513215260,verilog,,,,glbl,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sim_1/new/test_dac.v,1683632576,verilog,,,,test_dac,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/ip/DAC_fifo/sim/DAC_fifo.v,1680606417,verilog,,C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/ip/uart_send_fifo/sim/uart_send_fifo.v,,DAC_fifo,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/ip/MULTI_Voltage2temp/sim/MULTI_Voltage2temp.vhd,1680682603,vhdl,,,,multi_voltage2temp,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/ip/Mul_P/sim/Mul_P.vhd,1681016993,vhdl,,,,mul_p,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/ip/Mul_PID/sim/Mul_PID.vhd,1683464553,vhdl,,,,mul_pid,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/ip/PID_SUB/sim/PID_SUB.vhd,1682935321,vhdl,,,,pid_sub,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/ip/PID_adder/sim/PID_adder.vhd,1683462836,vhdl,,,,pid_adder,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/ip/uart_send_fifo/sim/uart_send_fifo.v,1680867519,verilog,,C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v,,uart_send_fifo,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/ADC/ad7606.v,1680856675,verilog,,C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v,,ad7606,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/ADC/volt_cal.v,1680924283,verilog,,C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v,,volt_cal,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v,1683460781,verilog,,C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v,,Control,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v,1681549476,verilog,,C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/Uart_Output.v,,DAC_5676;SPI_Master,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v,1683625955,verilog,,C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v,,Multi_Channel_top,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v,1683632778,verilog,,C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/test.v,,pid_contorl,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/Uart_Output.v,1681032572,verilog,,C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v,,Uart_Output,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v,1680577170,verilog,,C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_sub.v,,uart_rx,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_sub.v,1680867641,verilog,,C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v,,uart_sub,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v,1680577170,verilog,,C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/ADC/volt_cal.v,,uart_tx,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v,1680873965,verilog,,C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v,,uart_top,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v,1680774978,verilog,,C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/ADC/ad7606.v,,Voltage2Temp,,,,,,,,
+C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/test.v,1681550105,verilog,,C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sim_1/new/test_dac.v,,test_current;test_temp,,,,,,,,

@@ -326,39 +326,39 @@ reg [15:0]     target_Temp;
 reg [3:0]      Open_state;
 
 initial begin
-    ac_temp1 <= 16'h0ec0;
-    ac_temp2 <= 16'h0ec0;
-    ac_temp3 <= 16'h0ec0;
-    ac_temp4 <= 16'h0ec0;
+    ac_temp1 <= 16'h0f00;
+    ac_temp2 <= 16'h0f00;
+    ac_temp3 <= 16'h0f00;
+    ac_temp4 <= 16'h0f00;
     Open_state <= 4'b0000;
     #100
     change_target_temp <= 4'b0001;
-    target_Temp <= 16'h0ec0;
+    target_Temp <= 16'h0f00;
     Open_state <= 4'b0001;
     #100
     change_target_temp <= 4'b0010;
-    target_Temp <= 16'h0ec0;
+    target_Temp <= 16'h0f00;
     Open_state <= 4'b0011;
     #100
     change_target_temp <= 4'b0100;
-    target_Temp <= 16'h0ec0;
+    target_Temp <= 16'h0f00;
     Open_state <= 4'b0111;
     #100
     change_target_temp <= 4'b1000;
-    target_Temp <= 16'h0ec0;
+    target_Temp <= 16'h0f00;
     Open_state <= 4'b1111;
     #1000
     change_target_temp <= 4'b0001;
-    target_Temp <= 16'h0f00;
+    target_Temp <= 16'h0c00;
     #1000
     change_target_temp <= 4'b0010;
-    target_Temp <= 16'h0f00;
+    target_Temp <= 16'h0c00;
     #1000
     change_target_temp <= 4'b0100;
-    target_Temp <= 16'h0f00;
+    target_Temp <= 16'h0c00;
     #1000
     change_target_temp <= 4'b1000;
-    target_Temp <= 16'h0f00;
+    target_Temp <= 16'h0c00;
 end
 
 
