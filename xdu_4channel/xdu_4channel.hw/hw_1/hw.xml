@@ -813,6 +813,42 @@
         <net name="u_ila_0_error[0]"/>
       </nets>
     </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="u_ila_0_error_de[15]"/>
+        <net name="u_ila_0_error_de[14]"/>
+        <net name="u_ila_0_error_de[13]"/>
+        <net name="u_ila_0_error_de[12]"/>
+        <net name="u_ila_0_error_de[11]"/>
+        <net name="u_ila_0_error_de[10]"/>
+        <net name="u_ila_0_error_de[9]"/>
+        <net name="u_ila_0_error_de[8]"/>
+        <net name="u_ila_0_error_de[7]"/>
+        <net name="u_ila_0_error_de[6]"/>
+        <net name="u_ila_0_error_de[5]"/>
+        <net name="u_ila_0_error_de[4]"/>
+        <net name="u_ila_0_error_de[3]"/>
+        <net name="u_ila_0_error_de[2]"/>
+        <net name="u_ila_0_error_de[1]"/>
+        <net name="u_ila_0_error_de[0]"/>
+      </nets>
+    </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
@@ -855,9 +891,45 @@
         <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
-        <Option Id="DISPLAY_RADIX" value="UNSIGNED"/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="u_pid_contorl/D[15]"/>
+        <net name="u_pid_contorl/D[14]"/>
+        <net name="u_pid_contorl/D[13]"/>
+        <net name="u_pid_contorl/D[12]"/>
+        <net name="u_pid_contorl/D[11]"/>
+        <net name="u_pid_contorl/D[10]"/>
+        <net name="u_pid_contorl/D[9]"/>
+        <net name="u_pid_contorl/D[8]"/>
+        <net name="u_pid_contorl/D[7]"/>
+        <net name="u_pid_contorl/D[6]"/>
+        <net name="u_pid_contorl/D[5]"/>
+        <net name="u_pid_contorl/D[4]"/>
+        <net name="u_pid_contorl/D[3]"/>
+        <net name="u_pid_contorl/D[2]"/>
+        <net name="u_pid_contorl/D[1]"/>
+        <net name="u_pid_contorl/D[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="UNSIGNED"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe1[15:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
@@ -893,7 +965,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="UNSIGNED"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe0[15:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
@@ -1069,13 +1141,49 @@
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="u_pid_contorl/error_de[15]"/>
+        <net name="u_pid_contorl/error_de[14]"/>
+        <net name="u_pid_contorl/error_de[13]"/>
+        <net name="u_pid_contorl/error_de[12]"/>
+        <net name="u_pid_contorl/error_de[11]"/>
+        <net name="u_pid_contorl/error_de[10]"/>
+        <net name="u_pid_contorl/error_de[9]"/>
+        <net name="u_pid_contorl/error_de[8]"/>
+        <net name="u_pid_contorl/error_de[7]"/>
+        <net name="u_pid_contorl/error_de[6]"/>
+        <net name="u_pid_contorl/error_de[5]"/>
+        <net name="u_pid_contorl/error_de[4]"/>
+        <net name="u_pid_contorl/error_de[3]"/>
+        <net name="u_pid_contorl/error_de[2]"/>
+        <net name="u_pid_contorl/error_de[1]"/>
+        <net name="u_pid_contorl/error_de[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe2[31:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
@@ -1117,6 +1225,42 @@
         <net name="u_pid_contorl/error_sum_1[2]"/>
         <net name="u_pid_contorl/error_sum_1[1]"/>
         <net name="u_pid_contorl/error_sum_1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="u_pid_contorl/last_error[15]"/>
+        <net name="u_pid_contorl/last_error[14]"/>
+        <net name="u_pid_contorl/last_error[13]"/>
+        <net name="u_pid_contorl/last_error[12]"/>
+        <net name="u_pid_contorl/last_error[11]"/>
+        <net name="u_pid_contorl/last_error[10]"/>
+        <net name="u_pid_contorl/last_error[9]"/>
+        <net name="u_pid_contorl/last_error[8]"/>
+        <net name="u_pid_contorl/last_error[7]"/>
+        <net name="u_pid_contorl/last_error[6]"/>
+        <net name="u_pid_contorl/last_error[5]"/>
+        <net name="u_pid_contorl/last_error[4]"/>
+        <net name="u_pid_contorl/last_error[3]"/>
+        <net name="u_pid_contorl/last_error[2]"/>
+        <net name="u_pid_contorl/last_error[1]"/>
+        <net name="u_pid_contorl/last_error[0]"/>
       </nets>
     </probe>
   </probeset>

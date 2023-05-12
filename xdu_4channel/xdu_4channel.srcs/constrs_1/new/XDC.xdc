@@ -102,6 +102,8 @@ connect_debug_port u_ila_0/probe3 [get_nets [list {target_temp[0]} {target_temp[
 
 
 
+
+
 create_debug_core u_ila_0 ila
 set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
 set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0]
@@ -115,15 +117,15 @@ set_property port_width 1 [get_debug_ports u_ila_0/clk]
 connect_debug_port u_ila_0/clk [get_nets [list clk_IBUF_BUFG]]
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
 set_property port_width 16 [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {u_pid_contorl/P[0]} {u_pid_contorl/P[1]} {u_pid_contorl/P[2]} {u_pid_contorl/P[3]} {u_pid_contorl/P[4]} {u_pid_contorl/P[5]} {u_pid_contorl/P[6]} {u_pid_contorl/P[7]} {u_pid_contorl/P[8]} {u_pid_contorl/P[9]} {u_pid_contorl/P[10]} {u_pid_contorl/P[11]} {u_pid_contorl/P[12]} {u_pid_contorl/P[13]} {u_pid_contorl/P[14]} {u_pid_contorl/P[15]}]]
+connect_debug_port u_ila_0/probe0 [get_nets [list {u_pid_contorl/last_error[0]} {u_pid_contorl/last_error[1]} {u_pid_contorl/last_error[2]} {u_pid_contorl/last_error[3]} {u_pid_contorl/last_error[4]} {u_pid_contorl/last_error[5]} {u_pid_contorl/last_error[6]} {u_pid_contorl/last_error[7]} {u_pid_contorl/last_error[8]} {u_pid_contorl/last_error[9]} {u_pid_contorl/last_error[10]} {u_pid_contorl/last_error[11]} {u_pid_contorl/last_error[12]} {u_pid_contorl/last_error[13]} {u_pid_contorl/last_error[14]} {u_pid_contorl/last_error[15]}]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
 set_property port_width 16 [get_debug_ports u_ila_0/probe1]
-connect_debug_port u_ila_0/probe1 [get_nets [list {u_pid_contorl/I[0]} {u_pid_contorl/I[1]} {u_pid_contorl/I[2]} {u_pid_contorl/I[3]} {u_pid_contorl/I[4]} {u_pid_contorl/I[5]} {u_pid_contorl/I[6]} {u_pid_contorl/I[7]} {u_pid_contorl/I[8]} {u_pid_contorl/I[9]} {u_pid_contorl/I[10]} {u_pid_contorl/I[11]} {u_pid_contorl/I[12]} {u_pid_contorl/I[13]} {u_pid_contorl/I[14]} {u_pid_contorl/I[15]}]]
+connect_debug_port u_ila_0/probe1 [get_nets [list {u_pid_contorl/D[0]} {u_pid_contorl/D[1]} {u_pid_contorl/D[2]} {u_pid_contorl/D[3]} {u_pid_contorl/D[4]} {u_pid_contorl/D[5]} {u_pid_contorl/D[6]} {u_pid_contorl/D[7]} {u_pid_contorl/D[8]} {u_pid_contorl/D[9]} {u_pid_contorl/D[10]} {u_pid_contorl/D[11]} {u_pid_contorl/D[12]} {u_pid_contorl/D[13]} {u_pid_contorl/D[14]} {u_pid_contorl/D[15]}]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
-set_property port_width 32 [get_debug_ports u_ila_0/probe2]
-connect_debug_port u_ila_0/probe2 [get_nets [list {u_pid_contorl/error_sum_1[0]} {u_pid_contorl/error_sum_1[1]} {u_pid_contorl/error_sum_1[2]} {u_pid_contorl/error_sum_1[3]} {u_pid_contorl/error_sum_1[4]} {u_pid_contorl/error_sum_1[5]} {u_pid_contorl/error_sum_1[6]} {u_pid_contorl/error_sum_1[7]} {u_pid_contorl/error_sum_1[8]} {u_pid_contorl/error_sum_1[9]} {u_pid_contorl/error_sum_1[10]} {u_pid_contorl/error_sum_1[11]} {u_pid_contorl/error_sum_1[12]} {u_pid_contorl/error_sum_1[13]} {u_pid_contorl/error_sum_1[14]} {u_pid_contorl/error_sum_1[15]} {u_pid_contorl/error_sum_1[16]} {u_pid_contorl/error_sum_1[17]} {u_pid_contorl/error_sum_1[18]} {u_pid_contorl/error_sum_1[19]} {u_pid_contorl/error_sum_1[20]} {u_pid_contorl/error_sum_1[21]} {u_pid_contorl/error_sum_1[22]} {u_pid_contorl/error_sum_1[23]} {u_pid_contorl/error_sum_1[24]} {u_pid_contorl/error_sum_1[25]} {u_pid_contorl/error_sum_1[26]} {u_pid_contorl/error_sum_1[27]} {u_pid_contorl/error_sum_1[28]} {u_pid_contorl/error_sum_1[29]} {u_pid_contorl/error_sum_1[30]} {u_pid_contorl/error_sum_1[31]}]]
+set_property port_width 16 [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {u_pid_contorl/error_de[0]} {u_pid_contorl/error_de[1]} {u_pid_contorl/error_de[2]} {u_pid_contorl/error_de[3]} {u_pid_contorl/error_de[4]} {u_pid_contorl/error_de[5]} {u_pid_contorl/error_de[6]} {u_pid_contorl/error_de[7]} {u_pid_contorl/error_de[8]} {u_pid_contorl/error_de[9]} {u_pid_contorl/error_de[10]} {u_pid_contorl/error_de[11]} {u_pid_contorl/error_de[12]} {u_pid_contorl/error_de[13]} {u_pid_contorl/error_de[14]} {u_pid_contorl/error_de[15]}]]
 set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
 set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
 set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]

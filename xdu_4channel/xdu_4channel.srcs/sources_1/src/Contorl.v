@@ -38,7 +38,8 @@ module Control(
 
 	output reg [1:0]	set_P_I_valid,
 	output reg [15:0]	set_P,
-	output reg [15:0]	set_I
+	output reg [15:0]	set_I,
+	output reg [15:0]	set_D
 );
 
 // mode parameter
@@ -275,6 +276,10 @@ always@(posedge clk or negedge rst_n)begin
 				else if (cmd_channel==1) begin
 					set_I <= cmd_data;
 					set_P_I_valid <= 2'b10;
+				end 
+				else if (cmd_channel==2) begin
+					set_D <= cmd_data;
+					set_P_I_valid <= 2'b11;
 				end 
 				control_state <= FINISH;
 			end

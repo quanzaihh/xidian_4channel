@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tfgg484-2" LaunchTime="1683720140">
+<GenRun Id="synth_1" LaunchPart="xc7a35tfgg484-2" LaunchTime="1683896105">
   <File Type="PA-TCL" Name="Multi_Channel_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Multi_Channel_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Multi_Channel_top_reports.tcl"/>

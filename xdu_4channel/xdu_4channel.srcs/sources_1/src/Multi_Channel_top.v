@@ -90,6 +90,7 @@ wire 		cmd_full;
 wire [1:0]	set_P_I_valid;
 wire [15:0]	set_P;
 wire [15:0]	set_I;
+wire [15:0]	set_D;
 
 
 Control Control_new(
@@ -129,7 +130,8 @@ Control Control_new(
 	.channel_state					(channel_state),
 	.set_P_I_valid 					(set_P_I_valid),
 	.set_P							(set_P),
-	.set_I							(set_I)
+	.set_I							(set_I),
+	.set_D 							(set_D)
 );	
 
 // DAC1控制Channel1和Channel2，一共有8个DA出口，前两个空置，3，4控制TEC1和TEC2，5，6控制LD1和LD2的电压，7，8控制LD1和LD2的电流
@@ -272,7 +274,8 @@ pid_contorl  u_pid_contorl (
 
 	.set_P_I_valid 			 ( set_P_I_valid		 ),
 	.set_P					 ( set_P 				 ),
-	.set_I					 ( set_I 				 )	
+	.set_I					 ( set_I 				 ),
+	.set_D 					 ( set_D 				 )	
 );
 
 // test test(

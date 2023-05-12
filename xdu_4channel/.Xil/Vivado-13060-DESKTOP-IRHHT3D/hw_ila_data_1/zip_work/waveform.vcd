@@ -1,0 +1,18 @@
+$date
+        2023-May-12 21:32:43
+$end
+$version
+        Vivado v2017.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 16 " u_pid_contorl/last_error [15:0] $end
+$var reg 16 2 u_pid_contorl/D [15:0] $end
+$var reg 16 B u_pid_contorl/error_de [15:0] $end
+$var reg 1 R _TRIGGER $end
+$var reg 1 S _WINDOW $end
+$var reg 1 T _GAP $end
+$upscope $end
+$enddefinitions $end
