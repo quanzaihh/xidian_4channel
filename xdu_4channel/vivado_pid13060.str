@@ -3277,3 +3277,4 @@ dismissDialog("Close Hardware Target"); // n (cj)
 // TclEventType: HW_TARGET_NEEDS_CLOSE
 // TclEventType: HW_SERVER_UPDATE
 // [GUI Memory]: 171 MB (+466kb) [02:25:04]
+// [GUI Memory]: 180 MB (+887kb) [02:25:19]
