@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX1
+Size               16M
+Start Address      0x00000000
+End Address        0x00FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0021728B    May 14 09:45:19 2023    C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/impl_1/Multi_Channel_top.bit

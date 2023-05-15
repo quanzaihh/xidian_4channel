@@ -192,7 +192,7 @@ always@(posedge clk or negedge rst_n)begin
                 else begin
                     case(channel)
                         0:begin
-                            if (allow_adjust[0]) begin
+                            if (allow_adjust[0]&Open_state[0]) begin
                                 target <= Target_Temp1;
                                 now_value <= ac_temp1;
                                 sum_error_n <= error_sum_1;
@@ -208,7 +208,7 @@ always@(posedge clk or negedge rst_n)begin
                         end
 
                         1:begin
-                            if (allow_adjust[1]) begin
+                            if (allow_adjust[1]&Open_state[1]) begin
                                 target <= Target_Temp2;
                                 now_value <= ac_temp2;
                                 sum_error_n <= error_sum_2;
@@ -224,7 +224,7 @@ always@(posedge clk or negedge rst_n)begin
                         end
 
                         2:begin
-                            if (allow_adjust[2]) begin
+                            if (allow_adjust[2]&Open_state[2]) begin
                                 target <= Target_Temp3;
                                 now_value <= ac_temp3;
                                 sum_error_n <= error_sum_3;
@@ -240,7 +240,7 @@ always@(posedge clk or negedge rst_n)begin
                         end    
 
                         3:begin
-                            if (allow_adjust[3]) begin
+                            if (allow_adjust[3]&Open_state[3]) begin
                                 target <= Target_Temp4;
                                 now_value <= ac_temp4;
                                 sum_error_n <= error_sum_4;

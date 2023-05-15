@@ -108,11 +108,11 @@ Control Control_new(
 	.LD2_reverse_voltage			(LD2_reverse_voltage),
 	.LD3_reverse_voltage			(LD3_reverse_voltage),
 	.LD4_reverse_voltage			(LD4_reverse_voltage),
-	.LD1_Current_valid				(),
+	.LD1_Current_valid				(LD1_Current_valid),
 	.LD2_Current_valid				(LD2_Current_valid),
 	.LD3_Current_valid				(LD3_Current_valid),
 	.LD4_Current_valid				(LD4_Current_valid),
-	.LD1_Current					(),
+	.LD1_Current					(LD1_Current),
 	.LD2_Current					(LD2_Current),
 	.LD3_Current					(LD3_Current),
 	.LD4_Current					(LD4_Current),
@@ -286,14 +286,14 @@ pid_contorl  u_pid_contorl (
 //     .TEC1_valid 	(TEC1_valid)   
 // );
 
-test_current test_current(
-	.clk 				(clk),
-	.rst_n 				(rst_n),
-	.open_state 		(channel_state),
-	.cmd_full 			(cmd_full),
-	.LD1_Current  		(LD1_Current),
-	.LD1_Current_valid	(LD1_Current_valid)			
-);
+// test_current test_current(
+// 	.clk 				(clk),
+// 	.rst_n 				(rst_n),
+// 	.open_state 		(channel_state),
+// 	.cmd_full 			(cmd_full),
+// 	.LD1_Current  		(LD1_Current),
+// 	.LD1_Current_valid	(LD1_Current_valid)			
+// );
 
 
 endmodule

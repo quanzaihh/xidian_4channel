@@ -2,12 +2,12 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Fri May 12 20:55:06 2023
-# Process ID: 6944
-# Current directory: C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1
+# Start of session at: Sun May 14 10:15:01 2023
+# Process ID: 30804
+# Current directory: C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1
 # Command line: vivado.exe -log Multi_Channel_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Multi_Channel_top.tcl
-# Log file: C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/Multi_Channel_top.vds
-# Journal file: C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1\vivado.jou
+# Log file: C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/Multi_Channel_top.vds
+# Journal file: C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Multi_Channel_top.tcl -notrace
 Command: synth_design -top Multi_Channel_top -part xc7a35tfgg484-2
@@ -15,16 +15,16 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 16964 
+INFO: Helper process launched with PID 30316 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 417.969 ; gain = 106.844
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 413.879 ; gain = 102.602
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Multi_Channel_top' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:3]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:57]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:67]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:87]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:88]
-INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:3]
+INFO: [Synth 8-638] synthesizing module 'Multi_Channel_top' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:3]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:57]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:67]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:87]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:88]
+INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:3]
 	Parameter OPEN_CMD bound to: 8'b00000000 
 	Parameter CHANGE_TEMP_CMD bound to: 8'b00000001 
 	Parameter CHANGE_VOLTAGE_CMD bound to: 8'b00000010 
@@ -40,19 +40,19 @@ INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/Administrator/Deskto
 	Parameter CLOSE bound to: 4'b0110 
 	Parameter FINISH bound to: 4'b0111 
 	Parameter SET_P_I bound to: 4'b1000 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:133]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:155]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:174]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:196]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:242]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:100]
-WARNING: [Synth 8-5788] Register cmd_channel_reg in module Control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:127]
-WARNING: [Synth 8-5788] Register cmd_data_reg in module Control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:128]
-WARNING: [Synth 8-5788] Register set_P_reg in module Control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:273]
-WARNING: [Synth 8-5788] Register set_I_reg in module Control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:277]
-WARNING: [Synth 8-5788] Register set_D_reg in module Control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:281]
-INFO: [Synth 8-256] done synthesizing module 'Control' (1#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:3]
-INFO: [Synth 8-638] synthesizing module 'DAC_5676' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:133]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:155]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:174]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:196]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:242]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:100]
+WARNING: [Synth 8-5788] Register cmd_channel_reg in module Control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:127]
+WARNING: [Synth 8-5788] Register cmd_data_reg in module Control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:128]
+WARNING: [Synth 8-5788] Register set_P_reg in module Control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:273]
+WARNING: [Synth 8-5788] Register set_I_reg in module Control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:277]
+WARNING: [Synth 8-5788] Register set_D_reg in module Control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:281]
+INFO: [Synth 8-256] done synthesizing module 'Control' (1#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Contorl.v:3]
+INFO: [Synth 8-638] synthesizing module 'DAC_5676' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:3]
 	Parameter LENGTH bound to: 6'b011000 
 	Parameter init bound to: 8'b00001100 
 	Parameter WRITE_AND_REFRESH bound to: 4'b0011 
@@ -66,29 +66,29 @@ INFO: [Synth 8-638] synthesizing module 'DAC_5676' [C:/Users/Administrator/Deskt
 	Parameter CHANGE_VOLT bound to: 3'b001 
 	Parameter OPEN_OR_CLOSE bound to: 3'b010 
 	Parameter FINISH bound to: 3'b011 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:58]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:143]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:226]
-INFO: [Synth 8-638] synthesizing module 'DAC_fifo' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/realtime/DAC_fifo_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'DAC_fifo' (2#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/realtime/DAC_fifo_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'SPI_Master' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:283]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:56]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:135]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:218]
+INFO: [Synth 8-638] synthesizing module 'DAC_fifo' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/realtime/DAC_fifo_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'DAC_fifo' (2#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/realtime/DAC_fifo_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'SPI_Master' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:275]
 	Parameter LENGTH bound to: 6'b011000 
 	Parameter IDLE bound to: 3'b000 
 	Parameter BEGIN_SEND bound to: 3'b001 
 	Parameter CLKUP bound to: 3'b010 
 	Parameter CLKDOWN bound to: 3'b011 
 	Parameter WAIT_CLK bound to: 3'b100 
-INFO: [Synth 8-256] done synthesizing module 'SPI_Master' (3#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:283]
-WARNING: [Synth 8-5788] Register Volte_reg_reg[7] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:121]
-WARNING: [Synth 8-5788] Register Volte_reg_reg[6] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:121]
-WARNING: [Synth 8-5788] Register Volte_reg_reg[5] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:121]
-WARNING: [Synth 8-5788] Register Volte_reg_reg[4] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:121]
-WARNING: [Synth 8-5788] Register Volte_reg_reg[3] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:121]
-WARNING: [Synth 8-5788] Register Volte_reg_reg[2] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:121]
-WARNING: [Synth 8-5788] Register Volte_reg_reg[1] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:121]
-WARNING: [Synth 8-5788] Register Volte_reg_reg[0] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:121]
-INFO: [Synth 8-256] done synthesizing module 'DAC_5676' (4#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:3]
-INFO: [Synth 8-638] synthesizing module 'DAC_5676__parameterized0' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:3]
+INFO: [Synth 8-256] done synthesizing module 'SPI_Master' (3#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:275]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[7] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[6] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[5] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[4] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[3] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[2] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[1] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[0] in module DAC_5676 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+INFO: [Synth 8-256] done synthesizing module 'DAC_5676' (4#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:3]
+INFO: [Synth 8-638] synthesizing module 'DAC_5676__parameterized0' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:3]
 	Parameter LENGTH bound to: 6'b011000 
 	Parameter init bound to: 8'b00000011 
 	Parameter WRITE_AND_REFRESH bound to: 4'b0011 
@@ -102,20 +102,20 @@ INFO: [Synth 8-638] synthesizing module 'DAC_5676__parameterized0' [C:/Users/Adm
 	Parameter CHANGE_VOLT bound to: 3'b001 
 	Parameter OPEN_OR_CLOSE bound to: 3'b010 
 	Parameter FINISH bound to: 3'b011 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:58]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:143]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:226]
-WARNING: [Synth 8-5788] Register Volte_reg_reg[7] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:121]
-WARNING: [Synth 8-5788] Register Volte_reg_reg[6] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:121]
-WARNING: [Synth 8-5788] Register Volte_reg_reg[5] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:121]
-WARNING: [Synth 8-5788] Register Volte_reg_reg[4] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:121]
-WARNING: [Synth 8-5788] Register Volte_reg_reg[3] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:121]
-WARNING: [Synth 8-5788] Register Volte_reg_reg[2] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:121]
-WARNING: [Synth 8-5788] Register Volte_reg_reg[1] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:121]
-WARNING: [Synth 8-5788] Register Volte_reg_reg[0] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:121]
-INFO: [Synth 8-256] done synthesizing module 'DAC_5676__parameterized0' (4#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:3]
-WARNING: [Synth 8-350] instance 'DAC_2' of module 'DAC_5676' requires 14 connections, but only 13 given [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:165]
-INFO: [Synth 8-638] synthesizing module 'Voltage2Temp' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:56]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:135]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:218]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[7] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[6] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[5] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[4] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[3] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[2] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[1] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+WARNING: [Synth 8-5788] Register Volte_reg_reg[0] in module DAC_5676__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:113]
+INFO: [Synth 8-256] done synthesizing module 'DAC_5676__parameterized0' (4#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:3]
+WARNING: [Synth 8-350] instance 'DAC_2' of module 'DAC_5676' requires 14 connections, but only 13 given [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:165]
+INFO: [Synth 8-638] synthesizing module 'Voltage2Temp' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:3]
 	Parameter V_0 bound to: 17'b00001011010111101 
 	Parameter V_1 bound to: 17'b00001101110100111 
 	Parameter V_2 bound to: 17'b00010000100010010 
@@ -170,20 +170,20 @@ INFO: [Synth 8-638] synthesizing module 'Voltage2Temp' [C:/Users/Administrator/D
 	Parameter SELECT_PARAMETER bound to: 3'b010 
 	Parameter WAIT_MUL bound to: 3'b011 
 	Parameter FINISH bound to: 3'b100 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:118]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:232]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:102]
-INFO: [Synth 8-638] synthesizing module 'MULTI_Voltage2temp' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/realtime/MULTI_Voltage2temp_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'MULTI_Voltage2temp' (5#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/realtime/MULTI_Voltage2temp_stub.v:6]
-WARNING: [Synth 8-689] width (40) of port connection 'PCOUT' does not match port width (48) of module 'MULTI_Voltage2temp' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:254]
-WARNING: [Synth 8-5788] Register channel_reg in module Voltage2Temp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:106]
-WARNING: [Synth 8-5788] Register Temp_reg in module Voltage2Temp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:113]
-WARNING: [Synth 8-5788] Register TEC_Temp1_reg in module Voltage2Temp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:233]
-WARNING: [Synth 8-5788] Register TEC_Temp2_reg in module Voltage2Temp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:234]
-WARNING: [Synth 8-5788] Register TEC_Temp3_reg in module Voltage2Temp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:235]
-WARNING: [Synth 8-5788] Register TEC_Temp4_reg in module Voltage2Temp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:236]
-INFO: [Synth 8-256] done synthesizing module 'Voltage2Temp' (6#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:3]
-INFO: [Synth 8-638] synthesizing module 'ad7606' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/ADC/ad7606.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:118]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:232]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:102]
+INFO: [Synth 8-638] synthesizing module 'MULTI_Voltage2temp' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/realtime/MULTI_Voltage2temp_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'MULTI_Voltage2temp' (5#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/realtime/MULTI_Voltage2temp_stub.v:6]
+WARNING: [Synth 8-689] width (40) of port connection 'PCOUT' does not match port width (48) of module 'MULTI_Voltage2temp' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:254]
+WARNING: [Synth 8-5788] Register channel_reg in module Voltage2Temp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:106]
+WARNING: [Synth 8-5788] Register Temp_reg in module Voltage2Temp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:113]
+WARNING: [Synth 8-5788] Register TEC_Temp1_reg in module Voltage2Temp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:233]
+WARNING: [Synth 8-5788] Register TEC_Temp2_reg in module Voltage2Temp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:234]
+WARNING: [Synth 8-5788] Register TEC_Temp3_reg in module Voltage2Temp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:235]
+WARNING: [Synth 8-5788] Register TEC_Temp4_reg in module Voltage2Temp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:236]
+INFO: [Synth 8-256] done synthesizing module 'Voltage2Temp' (6#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Voltage2Temp.v:3]
+INFO: [Synth 8-638] synthesizing module 'ad7606' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/ADC/ad7606.v:5]
 	Parameter RESET bound to: 4'b0000 
 	Parameter IDLE bound to: 4'b0001 
 	Parameter AD_CONV bound to: 4'b0010 
@@ -198,83 +198,77 @@ INFO: [Synth 8-638] synthesizing module 'ad7606' [C:/Users/Administrator/Desktop
 	Parameter READ_CH7 bound to: 4'b1011 
 	Parameter READ_CH8 bound to: 4'b1100 
 	Parameter READ_DONE bound to: 4'b1101 
-INFO: [Synth 8-638] synthesizing module 'volt_cal' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/ADC/volt_cal.v:5]
-INFO: [Synth 8-256] done synthesizing module 'volt_cal' (7#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/ADC/volt_cal.v:5]
-INFO: [Synth 8-256] done synthesizing module 'ad7606' (8#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/ADC/ad7606.v:5]
-INFO: [Synth 8-638] synthesizing module 'Uart_Output' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/Uart_Output.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/Uart_Output.v:25]
-WARNING: [Synth 8-5788] Register cnt_reg in module Uart_Output is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/Uart_Output.v:27]
-WARNING: [Synth 8-5788] Register Out_data_reg in module Uart_Output is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/Uart_Output.v:38]
-INFO: [Synth 8-256] done synthesizing module 'Uart_Output' (9#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/Uart_Output.v:1]
-INFO: [Synth 8-638] synthesizing module 'uart_top' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:3]
+INFO: [Synth 8-638] synthesizing module 'volt_cal' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/ADC/volt_cal.v:5]
+INFO: [Synth 8-256] done synthesizing module 'volt_cal' (7#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/ADC/volt_cal.v:5]
+INFO: [Synth 8-256] done synthesizing module 'ad7606' (8#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/ADC/ad7606.v:5]
+INFO: [Synth 8-638] synthesizing module 'Uart_Output' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/Uart_Output.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/Uart_Output.v:25]
+WARNING: [Synth 8-5788] Register cnt_reg in module Uart_Output is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/Uart_Output.v:27]
+WARNING: [Synth 8-5788] Register Out_data_reg in module Uart_Output is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/Uart_Output.v:38]
+INFO: [Synth 8-256] done synthesizing module 'Uart_Output' (9#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/Uart_Output.v:1]
+INFO: [Synth 8-638] synthesizing module 'uart_top' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:3]
 	Parameter CHECK_HEAD bound to: 0 - type: integer 
 	Parameter GET_MODE bound to: 1 - type: integer 
 	Parameter GET_CHANNEL bound to: 2 - type: integer 
 	Parameter GET_VALUE bound to: 3 - type: integer 
 	Parameter CHECK_TAIL bound to: 4 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'uart_send_fifo' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/realtime/uart_send_fifo_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'uart_send_fifo' (10#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/realtime/uart_send_fifo_stub.v:6]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:104]
-INFO: [Synth 8-638] synthesizing module 'uart_sub' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_sub.v:1]
+INFO: [Synth 8-638] synthesizing module 'uart_send_fifo' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/realtime/uart_send_fifo_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'uart_send_fifo' (10#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/realtime/uart_send_fifo_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:104]
+INFO: [Synth 8-638] synthesizing module 'uart_sub' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_sub.v:1]
 	Parameter UART_BPS bound to: 17'b11100001000000000 
 	Parameter CLK_FREQ bound to: 29'b00010111110101111000010000000 
-INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v:1]
-	Parameter UART_BPS bound to: 17'b11100001000000000 
-	Parameter CLK_FREQ bound to: 29'b00010111110101111000010000000 
-	Parameter BAUD_CNT_MAX bound to: 29'b00000000000000000000110110010 
-INFO: [Synth 8-256] done synthesizing module 'uart_rx' (11#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v:1]
-INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:1]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v:1]
 	Parameter UART_BPS bound to: 17'b11100001000000000 
 	Parameter CLK_FREQ bound to: 29'b00010111110101111000010000000 
 	Parameter BAUD_CNT_MAX bound to: 29'b00000000000000000000110110010 
-INFO: [Synth 8-256] done synthesizing module 'uart_tx' (12#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:1]
-INFO: [Synth 8-256] done synthesizing module 'uart_sub' (13#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_sub.v:1]
-WARNING: [Synth 8-5788] Register channel_reg in module uart_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:121]
-WARNING: [Synth 8-5788] Register value_reg in module uart_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:129]
-WARNING: [Synth 8-5788] Register cmd_reg in module uart_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:143]
-INFO: [Synth 8-256] done synthesizing module 'uart_top' (14#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:3]
-INFO: [Synth 8-638] synthesizing module 'pid_contorl' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:23]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (11#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v:1]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:1]
+	Parameter UART_BPS bound to: 17'b11100001000000000 
+	Parameter CLK_FREQ bound to: 29'b00010111110101111000010000000 
+	Parameter BAUD_CNT_MAX bound to: 29'b00000000000000000000110110010 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (12#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:1]
+INFO: [Synth 8-256] done synthesizing module 'uart_sub' (13#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_sub.v:1]
+WARNING: [Synth 8-5788] Register channel_reg in module uart_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:121]
+WARNING: [Synth 8-5788] Register value_reg in module uart_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:129]
+WARNING: [Synth 8-5788] Register cmd_reg in module uart_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:143]
+INFO: [Synth 8-256] done synthesizing module 'uart_top' (14#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:3]
+INFO: [Synth 8-638] synthesizing module 'pid_contorl' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:23]
 	Parameter ERROR_MAX bound to: 2 - type: integer 
 	Parameter WAIT_TIME bound to: 0 - type: integer 
 	Parameter SELETC_CHANNEL bound to: 1 - type: integer 
 	Parameter JUDGE bound to: 2 - type: integer 
 	Parameter WAIT_FOR_CUL bound to: 3 - type: integer 
 	Parameter FINISH bound to: 4 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:48]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:49]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:50]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:73]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:74]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:75]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:76]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:80]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:82]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:84]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:86]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:131]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:98]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:193]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:293]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:171]
-INFO: [Synth 8-638] synthesizing module 'PID_SUB' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/realtime/PID_SUB_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'PID_SUB' (15#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/realtime/PID_SUB_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'PID_adder' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/realtime/PID_adder_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'PID_adder' (16#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/realtime/PID_adder_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'Mul_P' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/realtime/Mul_P_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'Mul_P' (17#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/realtime/Mul_P_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'Mul_PID' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/realtime/Mul_PID_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'Mul_PID' (18#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/realtime/Mul_PID_stub.v:6]
-WARNING: [Synth 8-350] instance 'Mul_PID_I' of module 'Mul_PID' requires 9 connections, but only 8 given [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:365]
-WARNING: [Synth 8-350] instance 'Mul_PID_D' of module 'Mul_PID' requires 9 connections, but only 8 given [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:376]
-WARNING: [Synth 8-5788] Register AD_output_reg in module pid_contorl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:205]
-INFO: [Synth 8-256] done synthesizing module 'pid_contorl' (19#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:23]
-INFO: [Synth 8-638] synthesizing module 'test_current' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/test.v:116]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/test.v:135]
-INFO: [Synth 8-256] done synthesizing module 'test_current' (20#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/test.v:116]
-INFO: [Synth 8-256] done synthesizing module 'Multi_Channel_top' (21#1) [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:3]
-WARNING: [Synth 8-3331] design test_current has unconnected port open_state[3]
-WARNING: [Synth 8-3331] design test_current has unconnected port open_state[2]
-WARNING: [Synth 8-3331] design test_current has unconnected port open_state[1]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:48]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:49]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:50]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:73]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:74]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:75]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:76]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:80]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:82]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:84]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:86]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:131]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:98]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:193]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:293]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:171]
+INFO: [Synth 8-638] synthesizing module 'PID_SUB' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/realtime/PID_SUB_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'PID_SUB' (15#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/realtime/PID_SUB_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'PID_adder' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/realtime/PID_adder_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'PID_adder' (16#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/realtime/PID_adder_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'Mul_P' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/realtime/Mul_P_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Mul_P' (17#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/realtime/Mul_P_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'Mul_PID' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/realtime/Mul_PID_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Mul_PID' (18#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/realtime/Mul_PID_stub.v:6]
+WARNING: [Synth 8-350] instance 'Mul_PID_I' of module 'Mul_PID' requires 9 connections, but only 8 given [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:365]
+WARNING: [Synth 8-350] instance 'Mul_PID_D' of module 'Mul_PID' requires 9 connections, but only 8 given [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:376]
+WARNING: [Synth 8-5788] Register AD_output_reg in module pid_contorl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:205]
+INFO: [Synth 8-256] done synthesizing module 'pid_contorl' (19#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Pid.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Multi_Channel_top' (20#1) [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Multi_Channel_top.v:3]
 WARNING: [Synth 8-3331] design pid_contorl has unconnected port Open_state[3]
 WARNING: [Synth 8-3331] design pid_contorl has unconnected port Open_state[2]
 WARNING: [Synth 8-3331] design pid_contorl has unconnected port Open_state[1]
@@ -286,7 +280,7 @@ WARNING: [Synth 8-3331] design Uart_Output has unconnected port Current_Voltage4
 WARNING: [Synth 8-3331] design ad7606 has unconnected port first_data
 WARNING: [Synth 8-3331] design SPI_Master has unconnected port MISO
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 487.031 ; gain = 175.906
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 483.863 ; gain = 172.586
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -296,58 +290,58 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 487.031 ; gain = 175.906
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 483.863 ; gain = 172.586
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tfgg484-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp7/MULTI_Voltage2temp_in_context.xdc] for cell 'Voltage2Temp/MULTI_Voltage2temp_new'
-Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp7/MULTI_Voltage2temp_in_context.xdc] for cell 'Voltage2Temp/MULTI_Voltage2temp_new'
-Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp8/DAC_fifo_in_context.xdc] for cell 'DAC_1/DAC_fifo_new'
-Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp8/DAC_fifo_in_context.xdc] for cell 'DAC_1/DAC_fifo_new'
-Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp8/DAC_fifo_in_context.xdc] for cell 'DAC_2/DAC_fifo_new'
-Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp8/DAC_fifo_in_context.xdc] for cell 'DAC_2/DAC_fifo_new'
-Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp9/uart_send_fifo_in_context.xdc] for cell 'uart_top_new/uart_send_fifo_new'
-Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp9/uart_send_fifo_in_context.xdc] for cell 'uart_top_new/uart_send_fifo_new'
-Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp10/Mul_PID_in_context.xdc] for cell 'u_pid_contorl/Mul_PID_I'
-Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp10/Mul_PID_in_context.xdc] for cell 'u_pid_contorl/Mul_PID_I'
-Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp10/Mul_PID_in_context.xdc] for cell 'u_pid_contorl/Mul_PID_D'
-Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp10/Mul_PID_in_context.xdc] for cell 'u_pid_contorl/Mul_PID_D'
-Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp11/Mul_P_in_context.xdc] for cell 'u_pid_contorl/Mul_P'
-Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp11/Mul_P_in_context.xdc] for cell 'u_pid_contorl/Mul_P'
-Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp12/PID_adder_in_context.xdc] for cell 'u_pid_contorl/PID_adder'
-Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp12/PID_adder_in_context.xdc] for cell 'u_pid_contorl/PID_adder'
-Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp13/PID_SUB_in_context.xdc] for cell 'u_pid_contorl/PID_SUB_1_d'
-Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp13/PID_SUB_in_context.xdc] for cell 'u_pid_contorl/PID_SUB_1_d'
-Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp13/PID_SUB_in_context.xdc] for cell 'u_pid_contorl/PID_SUB_2_d'
-Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-6944-DESKTOP-IRHHT3D/dcp13/PID_SUB_in_context.xdc] for cell 'u_pid_contorl/PID_SUB_2_d'
-Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc]
-WARNING: [Vivado 12-584] No ports matched 'AD_convstab_1B'. [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc:49]
-WARNING: [Vivado 12-584] No ports matched 'AD_convstab_1A'. [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc:67]
-WARNING: [Vivado 12-584] No ports matched 'AD_convstab_1B'. [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc:68]
-Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Multi_Channel_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Multi_Channel_top_propImpl.xdc].
+Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp7/MULTI_Voltage2temp_in_context.xdc] for cell 'Voltage2Temp/MULTI_Voltage2temp_new'
+Finished Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp7/MULTI_Voltage2temp_in_context.xdc] for cell 'Voltage2Temp/MULTI_Voltage2temp_new'
+Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp8/DAC_fifo_in_context.xdc] for cell 'DAC_1/DAC_fifo_new'
+Finished Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp8/DAC_fifo_in_context.xdc] for cell 'DAC_1/DAC_fifo_new'
+Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp8/DAC_fifo_in_context.xdc] for cell 'DAC_2/DAC_fifo_new'
+Finished Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp8/DAC_fifo_in_context.xdc] for cell 'DAC_2/DAC_fifo_new'
+Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp9/uart_send_fifo_in_context.xdc] for cell 'uart_top_new/uart_send_fifo_new'
+Finished Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp9/uart_send_fifo_in_context.xdc] for cell 'uart_top_new/uart_send_fifo_new'
+Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp10/Mul_PID_in_context.xdc] for cell 'u_pid_contorl/Mul_PID_I'
+Finished Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp10/Mul_PID_in_context.xdc] for cell 'u_pid_contorl/Mul_PID_I'
+Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp10/Mul_PID_in_context.xdc] for cell 'u_pid_contorl/Mul_PID_D'
+Finished Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp10/Mul_PID_in_context.xdc] for cell 'u_pid_contorl/Mul_PID_D'
+Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp11/Mul_P_in_context.xdc] for cell 'u_pid_contorl/Mul_P'
+Finished Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp11/Mul_P_in_context.xdc] for cell 'u_pid_contorl/Mul_P'
+Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp12/PID_adder_in_context.xdc] for cell 'u_pid_contorl/PID_adder'
+Finished Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp12/PID_adder_in_context.xdc] for cell 'u_pid_contorl/PID_adder'
+Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp13/PID_SUB_in_context.xdc] for cell 'u_pid_contorl/PID_SUB_1_d'
+Finished Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp13/PID_SUB_in_context.xdc] for cell 'u_pid_contorl/PID_SUB_1_d'
+Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp13/PID_SUB_in_context.xdc] for cell 'u_pid_contorl/PID_SUB_2_d'
+Finished Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/.Xil/Vivado-30804-DESKTOP-QANELNN/dcp13/PID_SUB_in_context.xdc] for cell 'u_pid_contorl/PID_SUB_2_d'
+Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc]
+WARNING: [Vivado 12-584] No ports matched 'AD_convstab_1B'. [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'AD_convstab_1A'. [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'AD_convstab_1B'. [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc:68]
+Finished Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Multi_Channel_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Multi_Channel_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Multi_Channel_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 822.480 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 818.293 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 822.480 ; gain = 511.355
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 818.293 ; gain = 507.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tfgg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 822.480 ; gain = 511.355
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 818.293 ; gain = 507.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -363,7 +357,7 @@ Applied set_property DONT_TOUCH = true for u_pid_contorl/PID_SUB_2_d. (constrain
 Applied set_property DONT_TOUCH = true for u_pid_contorl/PID_adder. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for uart_top_new/uart_send_fifo_new. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 822.480 ; gain = 511.355
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 818.293 ; gain = 507.016
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "LD1_reverse_voltage_valid" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "LD2_reverse_voltage_valid" won't be mapped to RAM because it is too sparse
@@ -386,17 +380,15 @@ INFO: [Synth 8-5546] ROM "DAC_init_state" won't be mapped to RAM because it is t
 INFO: [Synth 8-5544] ROM "Volte_change_init" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "Channel_init" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "da_init_done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "DAC_init_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "cmd_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "DAC_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "send_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "cmd_read_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:53]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:52]
 INFO: [Synth 8-5546] ROM "DAC_init_state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "Volte_change_init" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "Channel_init" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "da_init_done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "DAC_init_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "cmd_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "DAC_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "send_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -416,17 +408,15 @@ INFO: [Synth 8-5546] ROM "DAC_init_state" won't be mapped to RAM because it is t
 INFO: [Synth 8-5544] ROM "Volte_change_init" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "Channel_init" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "da_init_done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "DAC_init_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "cmd_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "DAC_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "send_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "cmd_read_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:53]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:52]
 INFO: [Synth 8-5546] ROM "DAC_init_state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "Volte_change_init" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "Channel_init" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "da_init_done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "DAC_init_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "cmd_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "DAC_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "send_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -473,15 +463,15 @@ INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) 
 INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "bit_flag" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element baud_cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v:64]
-WARNING: [Synth 8-6014] Unused sequential element bit_cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v:84]
+WARNING: [Synth 8-6014] Unused sequential element baud_cnt_reg was removed.  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v:64]
+WARNING: [Synth 8-6014] Unused sequential element bit_cnt_reg was removed.  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v:84]
 INFO: [Synth 8-5546] ROM "bit_flag" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element baud_cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:44]
-WARNING: [Synth 8-6014] Unused sequential element bit_cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:64]
-INFO: [Synth 8-4471] merging register 'uart_fifo_read_en_reg' into 'next_data_reg' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:45]
-INFO: [Synth 8-4471] merging register 'transmit_flag_reg' into 'next_data_r_reg' [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:66]
-WARNING: [Synth 8-6014] Unused sequential element uart_fifo_read_en_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:45]
-WARNING: [Synth 8-6014] Unused sequential element transmit_flag_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:66]
+WARNING: [Synth 8-6014] Unused sequential element baud_cnt_reg was removed.  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:44]
+WARNING: [Synth 8-6014] Unused sequential element bit_cnt_reg was removed.  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:64]
+INFO: [Synth 8-4471] merging register 'uart_fifo_read_en_reg' into 'next_data_reg' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:45]
+INFO: [Synth 8-4471] merging register 'transmit_flag_reg' into 'next_data_r_reg' [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:66]
+WARNING: [Synth 8-6014] Unused sequential element uart_fifo_read_en_reg was removed.  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:45]
+WARNING: [Synth 8-6014] Unused sequential element transmit_flag_reg was removed.  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_top.v:66]
 INFO: [Synth 8-5544] ROM "frame_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "cmd_valid" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "mode" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -499,8 +489,6 @@ INFO: [Synth 8-5544] ROM "CE" won't be mapped to Block RAM because address size 
 INFO: [Synth 8-5545] ROM "channel" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "channel" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "AD_output" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "LD1_Current0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -608,7 +596,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Uart_Output'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 822.480 ; gain = 511.355
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 818.293 ; gain = 507.016
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -622,30 +610,29 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     40 Bit       Adders := 1     
-	   2 Input     32 Bit       Adders := 3     
+	   2 Input     32 Bit       Adders := 2     
 	   2 Input     16 Bit       Adders := 9     
 	   2 Input      6 Bit       Adders := 2     
 	   2 Input      4 Bit       Adders := 4     
 	   2 Input      3 Bit       Adders := 2     
-	   2 Input      2 Bit       Adders := 2     
 	   2 Input      1 Bit       Adders := 1     
 +---Registers : 
 	               40 Bit    Registers := 2     
-	               32 Bit    Registers := 9     
+	               32 Bit    Registers := 8     
 	               24 Bit    Registers := 5     
 	               17 Bit    Registers := 9     
-	               16 Bit    Registers := 64    
+	               16 Bit    Registers := 63    
 	                8 Bit    Registers := 19    
 	                6 Bit    Registers := 2     
 	                4 Bit    Registers := 10    
-	                3 Bit    Registers := 3     
-	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 55    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 54    
 +---Muxes : 
 	   2 Input     40 Bit        Muxes := 1     
 	   6 Input     40 Bit        Muxes := 1     
 	  16 Input     37 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 5     
+	   2 Input     32 Bit        Muxes := 4     
 	   6 Input     32 Bit        Muxes := 2     
 	   4 Input     32 Bit        Muxes := 1     
 	   5 Input     24 Bit        Muxes := 2     
@@ -665,7 +652,6 @@ Detailed RTL Component Info :
 	  10 Input      8 Bit        Muxes := 4     
 	   4 Input      8 Bit        Muxes := 4     
 	   5 Input      6 Bit        Muxes := 2     
-	   7 Input      5 Bit        Muxes := 2     
 	  10 Input      4 Bit        Muxes := 3     
 	   2 Input      4 Bit        Muxes := 20    
 	   7 Input      4 Bit        Muxes := 1     
@@ -675,12 +661,12 @@ Detailed RTL Component Info :
 	   6 Input      3 Bit        Muxes := 4     
 	   5 Input      3 Bit        Muxes := 1     
 	   9 Input      3 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 8     
+	   2 Input      3 Bit        Muxes := 6     
 	  12 Input      2 Bit        Muxes := 1     
 	   7 Input      2 Bit        Muxes := 2     
 	  10 Input      1 Bit        Muxes := 29    
-	   2 Input      1 Bit        Muxes := 118   
-	   5 Input      1 Bit        Muxes := 46    
+	   2 Input      1 Bit        Muxes := 108   
+	   5 Input      1 Bit        Muxes := 44    
 	  14 Input      1 Bit        Muxes := 20    
 	  11 Input      1 Bit        Muxes := 1     
 	  12 Input      1 Bit        Muxes := 1     
@@ -737,46 +723,38 @@ Detailed RTL Component Info :
 	   5 Input      1 Bit        Muxes := 9     
 Module DAC_5676 
 Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
 	               24 Bit    Registers := 1     
 	               16 Bit    Registers := 8     
 	                8 Bit    Registers := 5     
-	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 5     
 +---Muxes : 
 	   4 Input     24 Bit        Muxes := 1     
 	   3 Input     16 Bit        Muxes := 8     
 	   4 Input      8 Bit        Muxes := 2     
 	   2 Input      8 Bit        Muxes := 10    
-	   7 Input      5 Bit        Muxes := 1     
 	   7 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 20    
 	   8 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 7     
-	   5 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 4     
 Module DAC_5676__parameterized0 
 Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
 	               24 Bit    Registers := 1     
 	               16 Bit    Registers := 8     
 	                8 Bit    Registers := 5     
-	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 5     
 +---Muxes : 
 	   4 Input     24 Bit        Muxes := 1     
 	   3 Input     16 Bit        Muxes := 8     
 	   4 Input      8 Bit        Muxes := 2     
 	   2 Input      8 Bit        Muxes := 10    
-	   7 Input      5 Bit        Muxes := 1     
 	   7 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 20    
 	   8 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 7     
-	   5 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 4     
 Module Voltage2Temp 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -908,19 +886,6 @@ Detailed RTL Component Info :
 	   6 Input      1 Bit        Muxes := 23    
 	   7 Input      1 Bit        Muxes := 2     
 	   4 Input      1 Bit        Muxes := 8     
-Module test_current 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 1     
-+---Registers : 
-	               32 Bit    Registers := 1     
-	               16 Bit    Registers := 1     
-	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 10    
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -938,33 +903,28 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "set_P_I_valid" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "DAC_init_state" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:53]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:52]
 INFO: [Synth 8-5546] ROM "DAC_init_state" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:53]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/DAC/DAC_5676.v:52]
 INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element uart_sub_1/uart_tx_inst/tx_done_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:26]
+WARNING: [Synth 8-6014] Unused sequential element uart_sub_1/uart_tx_inst/tx_done_reg was removed.  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:26]
 INFO: [Synth 8-5546] ROM "uart_sub_1/uart_rx_inst/bit_flag" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "uart_sub_1/uart_tx_inst/bit_flag" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "cmd_valid" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element uart_sub_1/uart_rx_inst/baud_cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v:64]
-WARNING: [Synth 8-6014] Unused sequential element uart_sub_1/uart_rx_inst/bit_cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v:84]
-WARNING: [Synth 8-6014] Unused sequential element uart_sub_1/uart_tx_inst/bit_cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:64]
-WARNING: [Synth 8-6014] Unused sequential element uart_sub_1/uart_tx_inst/baud_cnt_reg was removed.  [C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:44]
+WARNING: [Synth 8-6014] Unused sequential element uart_sub_1/uart_rx_inst/baud_cnt_reg was removed.  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v:64]
+WARNING: [Synth 8-6014] Unused sequential element uart_sub_1/uart_rx_inst/bit_cnt_reg was removed.  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_rx.v:84]
+WARNING: [Synth 8-6014] Unused sequential element uart_sub_1/uart_tx_inst/bit_cnt_reg was removed.  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:64]
+WARNING: [Synth 8-6014] Unused sequential element uart_sub_1/uart_tx_inst/baud_cnt_reg was removed.  [C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/sources_1/src/Uart/uart_sub/uart_tx.v:44]
 INFO: [Synth 8-5545] ROM "pid_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "channel" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "LD1_Current0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "Uart_Output_new/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "Uart_Output_new/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "Uart_Output_new/state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "Uart_Output_new/state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-3331] design test_current has unconnected port open_state[3]
-WARNING: [Synth 8-3331] design test_current has unconnected port open_state[2]
-WARNING: [Synth 8-3331] design test_current has unconnected port open_state[1]
 WARNING: [Synth 8-3331] design pid_contorl has unconnected port Open_state[3]
 WARNING: [Synth 8-3331] design pid_contorl has unconnected port Open_state[2]
 WARNING: [Synth 8-3331] design pid_contorl has unconnected port Open_state[1]
@@ -976,8 +936,6 @@ INFO: [Synth 8-3886] merging instance 'Voltage2Temp/b_reg[37]' (FDCE) to 'Voltag
 INFO: [Synth 8-3886] merging instance 'Voltage2Temp/b_reg[38]' (FDCE) to 'Voltage2Temp/b_reg[39]'
 INFO: [Synth 8-3886] merging instance 'Voltage2Temp/b_reg[39]' (FDCE) to 'Voltage2Temp/W_reg[23]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (Voltage2Temp/\W_reg[23] )
-INFO: [Synth 8-3886] merging instance 'test_current/state_reg[1]' (FDCE) to 'test_current/state_reg[2]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (test_current/\state_reg[2] )
 INFO: [Synth 8-3886] merging instance 'DAC_2/Channel_init_reg[0]' (FDCE) to 'DAC_2/Channel_init_reg[1]'
 INFO: [Synth 8-3886] merging instance 'DAC_2/Channel_init_reg[1]' (FDCE) to 'DAC_2/Channel_init_valid_reg'
 INFO: [Synth 8-3886] merging instance 'DAC_2/Channel_init_reg[2]' (FDCE) to 'DAC_2/Channel_init_reg[3]'
@@ -993,28 +951,13 @@ INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_change_init_reg[3]' (FDCE) to
 INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_change_init_reg[4]' (FDCE) to 'DAC_2/Volte_change_init_reg[5]'
 INFO: [Synth 8-3886] merging instance 'DAC_2/Volte_change_init_reg[5]' (FDCE) to 'DAC_2/Volte_change_init_reg[6]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_2/\Volte_change_init_reg[6] )
-INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[0]' (FDCE) to 'test_current/LD1_Current_reg[15]'
 INFO: [Synth 8-3886] merging instance 'DAC_1/Channel_init_reg[0]' (FDCE) to 'DAC_1/Channel_init_reg[1]'
-INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[1]' (FDCE) to 'test_current/LD1_Current_reg[15]'
-INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[2]' (FDCE) to 'test_current/LD1_Current_reg[15]'
 INFO: [Synth 8-3886] merging instance 'DAC_1/Channel_init_reg[1]' (FDCE) to 'DAC_1/Channel_init_reg[4]'
-INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[3]' (FDCE) to 'test_current/LD1_Current_reg[15]'
-INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[4]' (FDCE) to 'test_current/LD1_Current_reg[15]'
 INFO: [Synth 8-3886] merging instance 'DAC_1/Channel_init_reg[2]' (FDCE) to 'DAC_1/Channel_init_reg[3]'
-INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[5]' (FDCE) to 'test_current/LD1_Current_reg[15]'
-INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[6]' (FDCE) to 'test_current/LD1_Current_reg[15]'
 INFO: [Synth 8-3886] merging instance 'DAC_1/Channel_init_reg[3]' (FDCE) to 'DAC_1/Channel_init_valid_reg'
-INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[7]' (FDCE) to 'test_current/LD1_Current_reg[15]'
-INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[8]' (FDCE) to 'test_current/LD1_Current_reg[15]'
 INFO: [Synth 8-3886] merging instance 'DAC_1/Channel_init_reg[4]' (FDCE) to 'DAC_1/Channel_init_reg[5]'
-INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[9]' (FDCE) to 'test_current/LD1_Current_reg[15]'
-INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[10]' (FDCE) to 'test_current/LD1_Current_reg[15]'
 INFO: [Synth 8-3886] merging instance 'DAC_1/Channel_init_reg[5]' (FDCE) to 'DAC_1/Channel_init_reg[6]'
-INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[11]' (FDCE) to 'test_current/LD1_Current_reg[15]'
-INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[12]' (FDCE) to 'test_current/LD1_Current_reg[15]'
 INFO: [Synth 8-3886] merging instance 'DAC_1/Channel_init_reg[6]' (FDCE) to 'DAC_1/Channel_init_reg[7]'
-INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[13]' (FDCE) to 'test_current/LD1_Current_reg[15]'
-INFO: [Synth 8-3886] merging instance 'test_current/LD1_Current_reg[14]' (FDCE) to 'test_current/LD1_Current_reg[15]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_1/\Channel_init_reg[7] )
 INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_change_init_reg[0]' (FDCE) to 'DAC_1/Volte_change_init_reg[1]'
 INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_change_init_reg[7]' (FDCE) to 'DAC_1/Volte_change_init_reg[1]'
@@ -1078,33 +1021,30 @@ INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[0][10]' (FDE) to 'DAC
 INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[1][11]' (FDE) to 'DAC_1/Volte_reg_reg[1][15]'
 INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[0][11]' (FDE) to 'DAC_1/Volte_reg_reg[0][15]'
 INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[1][12]' (FDE) to 'DAC_1/Volte_reg_reg[1][15]'
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[0][12]' (FDE) to 'DAC_1/Volte_reg_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[1][13]' (FDE) to 'DAC_1/Volte_reg_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[0][13]' (FDE) to 'DAC_1/Volte_reg_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[1][14]' (FDE) to 'DAC_1/Volte_reg_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/Volte_reg_reg[0][14]' (FDE) to 'DAC_1/Volte_reg_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'Uart_Output_new/Out_data_reg[35]' (FDE) to 'Uart_Output_new/Out_data_reg[39]'
+INFO: [Synth 8-3886] merging instance 'Uart_Output_new/Out_data_reg[36]' (FDE) to 'Uart_Output_new/Out_data_reg[39]'
+INFO: [Synth 8-3886] merging instance 'Uart_Output_new/Out_data_reg[37]' (FDE) to 'Uart_Output_new/Out_data_reg[39]'
+INFO: [Synth 8-3886] merging instance 'Uart_Output_new/Out_data_reg[38]' (FDE) to 'Uart_Output_new/Out_data_reg[39]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Uart_Output_new/Out_data_reg[39] )
+INFO: [Synth 8-3886] merging instance 'DAC_2/cmd_reg[19]' (FDCE) to 'DAC_2/cmd_reg[23]'
+INFO: [Synth 8-3886] merging instance 'DAC_2/cmd_reg[20]' (FDCE) to 'DAC_2/cmd_reg[21]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_2/\cmd_reg[23] )
+INFO: [Synth 8-3886] merging instance 'DAC_1/cmd_reg[19]' (FDCE) to 'DAC_1/cmd_reg[23]'
+INFO: [Synth 8-3886] merging instance 'DAC_1/cmd_reg[20]' (FDCE) to 'DAC_1/cmd_reg[21]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_1/\cmd_reg[23] )
+INFO: [Synth 8-3886] merging instance 'DAC_2/Release_reg[3]' (FDCE) to 'DAC_2/Release_reg[2]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_2/\Release_reg[2] )
+INFO: [Synth 8-3886] merging instance 'DAC_1/Release_reg[1]' (FDCE) to 'DAC_1/Release_reg[0]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_1/\Release_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_2/\Volte_reg_reg[3][15] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_2/\Volte_reg_reg[2][15] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_1/\Volte_reg_reg[1][15] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (DAC_1/\Volte_reg_reg[0][15] )
-WARNING: [Synth 8-3332] Sequential element (LD1_Current_valid_reg) is unused and will be removed from module Control.
-WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[15]) is unused and will be removed from module Control.
-WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[14]) is unused and will be removed from module Control.
-WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[13]) is unused and will be removed from module Control.
-WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[12]) is unused and will be removed from module Control.
-WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[11]) is unused and will be removed from module Control.
-WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[10]) is unused and will be removed from module Control.
-WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[9]) is unused and will be removed from module Control.
-WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[8]) is unused and will be removed from module Control.
-WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[7]) is unused and will be removed from module Control.
-WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[6]) is unused and will be removed from module Control.
-WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[5]) is unused and will be removed from module Control.
-WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[4]) is unused and will be removed from module Control.
-WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[3]) is unused and will be removed from module Control.
-WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[2]) is unused and will be removed from module Control.
-WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[1]) is unused and will be removed from module Control.
-WARNING: [Synth 8-3332] Sequential element (LD1_Current_reg[0]) is unused and will be removed from module Control.
 WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[1]) is unused and will be removed from module DAC_5676.
 WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[0]) is unused and will be removed from module DAC_5676.
 WARNING: [Synth 8-3332] Sequential element (Volte_change_init_reg[6]) is unused and will be removed from module DAC_5676.
@@ -1127,7 +1067,6 @@ WARNING: [Synth 8-3332] Sequential element (volt_cal_1/Volt_2_reg[15]) is unused
 WARNING: [Synth 8-3332] Sequential element (volt_cal_1/Volt_7_reg[15]) is unused and will be removed from module ad7606.
 WARNING: [Synth 8-3332] Sequential element (volt_cal_1/Volt_8_reg[15]) is unused and will be removed from module ad7606.
 WARNING: [Synth 8-3332] Sequential element (Uart_Output_new/Out_data_reg[39]) is unused and will be removed from module Multi_Channel_top.
-WARNING: [Synth 8-3332] Sequential element (state_reg[2]) is unused and will be removed from module test_current.
 WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[6]_P) is unused and will be removed from module DAC_5676.
 WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[5]_P) is unused and will be removed from module DAC_5676.
 WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[4]_P) is unused and will be removed from module DAC_5676.
@@ -1139,7 +1078,7 @@ WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[4]_P) is unused
 WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[1]_P) is unused and will be removed from module DAC_5676__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (Volte_change_reg_reg[0]_P) is unused and will be removed from module DAC_5676__parameterized0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 822.480 ; gain = 511.355
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 818.293 ; gain = 507.016
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1151,13 +1090,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 832.062 ; gain = 520.938
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 831.305 ; gain = 520.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 836.367 ; gain = 525.242
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 835.410 ; gain = 524.133
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1169,7 +1108,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 891.090 ; gain = 579.965
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 891.855 ; gain = 580.578
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1193,7 +1132,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 891.090 ; gain = 579.965
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 891.855 ; gain = 580.578
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1206,7 +1145,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 891.090 ; gain = 579.965
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 891.855 ; gain = 580.578
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1218,25 +1157,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 891.090 ; gain = 579.965
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 891.855 ; gain = 580.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 891.090 ; gain = 579.965
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 891.855 ; gain = 580.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 891.090 ; gain = 579.965
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 891.855 ; gain = 580.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 891.090 ; gain = 579.965
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 891.855 ; gain = 580.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1270,17 +1209,17 @@ Report Cell Usage:
 |9     |PID_adder          |     1|
 |10    |uart_send_fifo     |     1|
 |11    |BUFG               |     1|
-|12    |CARRY4             |    90|
+|12    |CARRY4             |    82|
 |13    |LUT1               |   197|
-|14    |LUT2               |   371|
-|15    |LUT3               |   392|
-|16    |LUT4               |   257|
-|17    |LUT5               |   257|
-|18    |LUT6               |   556|
+|14    |LUT2               |   364|
+|15    |LUT3               |   374|
+|16    |LUT4               |   262|
+|17    |LUT5               |   223|
+|18    |LUT6               |   552|
 |19    |MUXF7              |     1|
-|20    |FDCE               |  1287|
-|21    |FDPE               |   108|
-|22    |FDRE               |   539|
+|20    |FDCE               |  1260|
+|21    |FDPE               |   113|
+|22    |FDRE               |   554|
 |23    |LDC                |    64|
 |24    |IBUF               |    20|
 |25    |OBUF               |    18|
@@ -1290,31 +1229,30 @@ Report Instance Areas:
 +------+-------------------+-------------------------+------+
 |      |Instance           |Module                   |Cells |
 +------+-------------------+-------------------------+------+
-|1     |top                |                         |  4596|
+|1     |top                |                         |  4523|
 |2     |  AD7606_1         |ad7606                   |   704|
 |3     |    volt_cal_1     |volt_cal                 |   437|
-|4     |  Control_new      |Control                  |   565|
-|5     |  DAC_1            |DAC_5676                 |   374|
-|6     |    SPI_Master_new |SPI_Master_0             |    82|
-|7     |  DAC_2            |DAC_5676__parameterized0 |   391|
+|4     |  Control_new      |Control                  |   580|
+|5     |  DAC_1            |DAC_5676                 |   380|
+|6     |    SPI_Master_new |SPI_Master_0             |    81|
+|7     |  DAC_2            |DAC_5676__parameterized0 |   383|
 |8     |    SPI_Master_new |SPI_Master               |    81|
 |9     |  Uart_Output_new  |Uart_Output              |   132|
 |10    |  Voltage2Temp     |Voltage2Temp             |   561|
-|11    |  test_current     |test_current             |    87|
-|12    |  u_pid_contorl    |pid_contorl              |  1296|
-|13    |  uart_top_new     |uart_top                 |   447|
-|14    |    uart_sub_1     |uart_sub                 |   210|
-|15    |      uart_rx_inst |uart_rx                  |   148|
-|16    |      uart_tx_inst |uart_tx                  |    62|
+|11    |  u_pid_contorl    |pid_contorl              |  1297|
+|12    |  uart_top_new     |uart_top                 |   447|
+|13    |    uart_sub_1     |uart_sub                 |   210|
+|14    |      uart_rx_inst |uart_rx                  |   147|
+|15    |      uart_tx_inst |uart_tx                  |    63|
 +------+-------------------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 891.090 ; gain = 579.965
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 891.855 ; gain = 580.578
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 75 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 891.090 ; gain = 244.516
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 891.090 ; gain = 579.965
+Synthesis finished with 0 errors, 0 critical warnings and 54 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 891.855 ; gain = 246.148
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 891.855 ; gain = 580.578
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 175 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 167 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -1323,12 +1261,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LDC => LDCE: 64 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-367 Infos, 129 Warnings, 0 Critical Warnings and 0 Errors encountered.
+353 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 891.090 ; gain = 591.605
-INFO: [Common 17-600] The following parameters have non-default value.
-tcl.collectionResultDisplayLimit
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/synth_1/Multi_Channel_top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 891.855 ; gain = 592.062
+INFO: [Common 17-1381] The checkpoint 'C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/synth_1/Multi_Channel_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Multi_Channel_top_utilization_synth.rpt -pb Multi_Channel_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 891.090 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri May 12 20:55:36 2023...
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.040 . Memory (MB): peak = 891.855 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun May 14 10:16:04 2023...
