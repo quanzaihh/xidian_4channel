@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Sun May 14 10:17:24 2023
-| Host         : DESKTOP-QANELNN running 64-bit major release  (build 9200)
+| Date         : Thu May 18 15:50:21 2023
+| Host         : DESKTOP-IRHHT3D running 64-bit major release  (build 9200)
 | Command      : report_drc -file Multi_Channel_top_drc_routed.rpt -pb Multi_Channel_top_drc_routed.pb -rpx Multi_Channel_top_drc_routed.rpx
 | Design       : Multi_Channel_top
 | Device       : xc7a35tfgg484-2
@@ -501,7 +501,7 @@ Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-9 net(s) have no routable loads. The problem bus(es) and/or net(s) are DAC_2/DAC_fifo_new/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, DAC_1/DAC_fifo_new/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, uart_top_new/uart_send_fifo_new/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, DAC_2/DAC_fifo_new/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, DAC_1/DAC_fifo_new/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, uart_top_new/uart_send_fifo_new/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, DAC_2/DAC_fifo_new/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i, DAC_1/DAC_fifo_new/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i, uart_top_new/uart_send_fifo_new/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i.
+9 net(s) have no routable loads. The problem bus(es) and/or net(s) are DAC_1/DAC_fifo_new/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, uart_top_new/uart_send_fifo_new/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, DAC_2/DAC_fifo_new/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, DAC_1/DAC_fifo_new/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, uart_top_new/uart_send_fifo_new/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, DAC_2/DAC_fifo_new/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, DAC_1/DAC_fifo_new/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i, uart_top_new/uart_send_fifo_new/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i, DAC_2/DAC_fifo_new/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i.
 Related violations: <none>
 
 AVAL-4#1 Advisory

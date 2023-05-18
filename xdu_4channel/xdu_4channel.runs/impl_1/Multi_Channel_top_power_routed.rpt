@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Sun May 14 10:17:28 2023
-| Host             : DESKTOP-QANELNN running 64-bit major release  (build 9200)
+| Date             : Thu May 18 15:50:24 2023
+| Host             : DESKTOP-IRHHT3D running 64-bit major release  (build 9200)
 | Command          : report_power -file Multi_Channel_top_power_routed.rpt -pb Multi_Channel_top_power_summary_routed.pb -rpx Multi_Channel_top_power_routed.rpx
 | Design           : Multi_Channel_top
 | Device           : xc7a35tfgg484-2
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 20.211       |
+| Total On-Chip Power (W)  | 19.771       |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 20.046       |
-| Device Static (W)        | 0.164        |
+| Dynamic (W)              | 19.612       |
+| Device Static (W)        | 0.159        |
 | Effective TJA (C/W)      | 2.8          |
-| Max Ambient (C)          | 28.2         |
-| Junction Temperature (C) | 81.8         |
+| Max Ambient (C)          | 29.4         |
+| Junction Temperature (C) | 80.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,19 +52,19 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     3.773 |     4603 |       --- |             --- |
-|   LUT as Logic |     3.313 |     1930 |     20800 |            9.28 |
-|   Register     |     0.261 |     2275 |     41600 |            5.47 |
-|   CARRY4       |     0.193 |      102 |      8150 |            1.25 |
+| Slice Logic    |     3.885 |     4591 |       --- |             --- |
+|   LUT as Logic |     3.400 |     1927 |     20800 |            9.26 |
+|   Register     |     0.281 |     2275 |     41600 |            5.47 |
+|   CARRY4       |     0.198 |      102 |      8150 |            1.25 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
+|   F7/F8 Muxes  |    <0.001 |        2 |     32600 |           <0.01 |
 |   Others       |     0.000 |       86 |       --- |             --- |
-|   F7/F8 Muxes  |     0.000 |        1 |     32600 |           <0.01 |
-| Signals        |     7.012 |     4027 |       --- |             --- |
+| Signals        |     6.449 |     4004 |       --- |             --- |
 | Block RAM      |     0.031 |        2 |        50 |            4.00 |
-| DSPs           |     6.644 |        8 |        90 |            8.89 |
+| DSPs           |     6.660 |        8 |        90 |            8.89 |
 | I/O            |     2.588 |       38 |       250 |           15.20 |
-| Static Power   |     0.164 |          |           |                 |
-| Total          |    20.211 |          |           |                 |
+| Static Power   |     0.159 |          |           |                 |
+| Total          |    19.771 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |    17.619 |      17.534 |      0.085 |
+| Vccint    |       1.000 |    17.180 |      17.099 |      0.081 |
 | Vccaux    |       1.800 |     0.113 |       0.092 |      0.021 |
 | Vcco33    |       3.300 |     0.712 |       0.711 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -141,42 +141,22 @@ Table of Contents
 +---------------------------------------------------------------------------------+-----------+
 | Name                                                                            | Power (W) |
 +---------------------------------------------------------------------------------+-----------+
-| Multi_Channel_top                                                               |    20.046 |
-|   AD7606_1                                                                      |     1.030 |
-|     volt_cal_1                                                                  |     0.094 |
-|   Control_new                                                                   |     0.747 |
-|   DAC_1                                                                         |     0.755 |
-|     DAC_fifo_new                                                                |     0.039 |
-|       U0                                                                        |     0.039 |
-|         inst_fifo_gen                                                           |     0.039 |
-|           gconvfifo.rf                                                          |     0.039 |
-|             grf.rf                                                              |     0.039 |
-|               gntv_or_sync_fifo.gl0.rd                                          |     0.016 |
-|                 grss.rsts                                                       |     0.014 |
-|                 rpntr                                                           |     0.002 |
-|               gntv_or_sync_fifo.gl0.wr                                          |     0.021 |
-|                 gwss.wsts                                                       |     0.002 |
-|                 wpntr                                                           |     0.020 |
-|               gntv_or_sync_fifo.mem                                             |     0.002 |
-|                 gbm.gbmg.gbmga.ngecc.bmg                                        |     0.002 |
-|                   inst_blk_mem_gen                                              |     0.002 |
-|                     gnbram.gnativebmg.native_blk_mem_gen                        |     0.002 |
-|                       valid.cstr                                                |     0.002 |
-|                         ramloop[0].ram.r                                        |     0.002 |
-|                           prim_noinit.ram                                       |     0.002 |
-|     SPI_Master_new                                                              |     0.175 |
-|   DAC_2                                                                         |     0.829 |
-|     DAC_fifo_new                                                                |     0.038 |
-|       U0                                                                        |     0.038 |
-|         inst_fifo_gen                                                           |     0.038 |
-|           gconvfifo.rf                                                          |     0.038 |
-|             grf.rf                                                              |     0.038 |
+| Multi_Channel_top                                                               |    19.612 |
+|   AD7606_1                                                                      |     1.024 |
+|     volt_cal_1                                                                  |     0.096 |
+|   Control_new                                                                   |     0.802 |
+|   DAC_1                                                                         |     0.710 |
+|     DAC_fifo_new                                                                |     0.033 |
+|       U0                                                                        |     0.033 |
+|         inst_fifo_gen                                                           |     0.033 |
+|           gconvfifo.rf                                                          |     0.033 |
+|             grf.rf                                                              |     0.033 |
 |               gntv_or_sync_fifo.gl0.rd                                          |     0.009 |
 |                 grss.rsts                                                       |     0.007 |
 |                 rpntr                                                           |     0.002 |
-|               gntv_or_sync_fifo.gl0.wr                                          |     0.027 |
-|                 gwss.wsts                                                       |     0.002 |
-|                 wpntr                                                           |     0.026 |
+|               gntv_or_sync_fifo.gl0.wr                                          |     0.023 |
+|                 gwss.wsts                                                       |     0.005 |
+|                 wpntr                                                           |     0.018 |
 |               gntv_or_sync_fifo.mem                                             |     0.002 |
 |                 gbm.gbmg.gbmga.ngecc.bmg                                        |     0.002 |
 |                   inst_blk_mem_gen                                              |     0.002 |
@@ -184,80 +164,100 @@ Table of Contents
 |                       valid.cstr                                                |     0.002 |
 |                         ramloop[0].ram.r                                        |     0.002 |
 |                           prim_noinit.ram                                       |     0.002 |
-|     SPI_Master_new                                                              |     0.188 |
-|   Uart_Output_new                                                               |     0.202 |
-|   Voltage2Temp                                                                  |     2.114 |
-|     MULTI_Voltage2temp_new                                                      |     1.086 |
-|       U0                                                                        |     1.086 |
-|         i_synth                                                                 |     1.086 |
-|           device_supports_dsp.use_multadd_dsp                                   |     1.086 |
-|             dsp48_multadd.multadd_usecase_inst                                  |     1.086 |
-|               i_synth_option.i_synth_model                                      |     1.086 |
-|                 opt_vx7.i_uniwrap                                               |     1.086 |
-|   u_pid_contorl                                                                 |    11.028 |
-|     Mul_P                                                                       |     0.982 |
-|       U0                                                                        |     0.982 |
-|         i_mult                                                                  |     0.982 |
-|           gDSP.gDSP_only.iDSP                                                   |     0.982 |
-|     Mul_PID_D                                                                   |     3.703 |
-|       U0                                                                        |     3.703 |
-|         i_synth                                                                 |     3.703 |
-|           device_supports_dsp.use_multadd_dsp                                   |     3.703 |
-|             dsp48s_multadd.separate.add                                         |     1.612 |
-|               two_dsps.addsub0                                                  |     1.317 |
-|                 i_synth_option.i_synth_model                                    |     1.317 |
-|                   opt_vx7.i_uniwrap                                             |     1.317 |
-|               two_dsps.pipelined1.addsub0_balance_reg                           |     0.295 |
-|             dsp48s_multadd.separate.mult                                        |     2.091 |
-|               gDSP.gDSP_only.iDSP                                               |     2.091 |
-|                 use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay |     0.115 |
-|     Mul_PID_I                                                                   |     3.939 |
-|       U0                                                                        |     3.939 |
-|         i_synth                                                                 |     3.939 |
-|           device_supports_dsp.use_multadd_dsp                                   |     3.939 |
-|             dsp48s_multadd.separate.add                                         |     1.840 |
-|               two_dsps.addsub0                                                  |     1.159 |
-|                 i_synth_option.i_synth_model                                    |     1.159 |
-|                   opt_vx7.i_uniwrap                                             |     1.159 |
-|               two_dsps.pipelined1.addsub0_balance_reg                           |     0.681 |
-|             dsp48s_multadd.separate.mult                                        |     2.099 |
-|               gDSP.gDSP_only.iDSP                                               |     2.099 |
-|                 use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay |     0.110 |
-|     PID_SUB_1_d                                                                 |     0.314 |
-|       U0                                                                        |     0.314 |
-|         xst_addsub                                                              |     0.314 |
-|           i_baseblox.i_baseblox_addsub                                          |     0.314 |
-|             no_pipelining.the_addsub                                            |     0.314 |
-|               i_lut6.i_lut6_addsub                                              |     0.314 |
-|                 i_q.i_simple.qreg                                               |     0.312 |
-|     PID_SUB_2_d                                                                 |     0.310 |
-|       U0                                                                        |     0.310 |
-|         xst_addsub                                                              |     0.310 |
-|           i_baseblox.i_baseblox_addsub                                          |     0.310 |
-|             no_pipelining.the_addsub                                            |     0.310 |
-|               i_lut6.i_lut6_addsub                                              |     0.310 |
-|                 i_q.i_simple.qreg                                               |     0.243 |
-|     PID_adder                                                                   |     0.386 |
-|       U0                                                                        |     0.386 |
-|         xst_addsub                                                              |     0.386 |
-|           i_baseblox.i_baseblox_addsub                                          |     0.386 |
-|             no_pipelining.the_addsub                                            |     0.386 |
-|               i_lut6.i_lut6_addsub                                              |     0.386 |
-|                 i_q.i_simple.qreg                                               |     0.252 |
-|   uart_top_new                                                                  |     0.417 |
-|     uart_send_fifo_new                                                          |     0.089 |
-|       U0                                                                        |     0.089 |
-|         inst_fifo_gen                                                           |     0.089 |
-|           gconvfifo.rf                                                          |     0.089 |
-|             grf.rf                                                              |     0.089 |
-|               gntv_or_sync_fifo.gl0.rd                                          |     0.055 |
-|                 grss.rsts                                                       |     0.023 |
+|     SPI_Master_new                                                              |     0.168 |
+|   DAC_2                                                                         |     0.804 |
+|     DAC_fifo_new                                                                |     0.037 |
+|       U0                                                                        |     0.037 |
+|         inst_fifo_gen                                                           |     0.037 |
+|           gconvfifo.rf                                                          |     0.037 |
+|             grf.rf                                                              |     0.037 |
+|               gntv_or_sync_fifo.gl0.rd                                          |     0.010 |
+|                 grss.rsts                                                       |     0.007 |
+|                 rpntr                                                           |     0.002 |
+|               gntv_or_sync_fifo.gl0.wr                                          |     0.026 |
+|                 gwss.wsts                                                       |     0.004 |
+|                 wpntr                                                           |     0.021 |
+|               gntv_or_sync_fifo.mem                                             |     0.002 |
+|                 gbm.gbmg.gbmga.ngecc.bmg                                        |     0.002 |
+|                   inst_blk_mem_gen                                              |     0.002 |
+|                     gnbram.gnativebmg.native_blk_mem_gen                        |     0.002 |
+|                       valid.cstr                                                |     0.002 |
+|                         ramloop[0].ram.r                                        |     0.002 |
+|                           prim_noinit.ram                                       |     0.002 |
+|     SPI_Master_new                                                              |     0.181 |
+|   Uart_Output_new                                                               |     0.215 |
+|   Voltage2Temp                                                                  |     2.074 |
+|     MULTI_Voltage2temp_new                                                      |     1.045 |
+|       U0                                                                        |     1.045 |
+|         i_synth                                                                 |     1.045 |
+|           device_supports_dsp.use_multadd_dsp                                   |     1.045 |
+|             dsp48_multadd.multadd_usecase_inst                                  |     1.045 |
+|               i_synth_option.i_synth_model                                      |     1.045 |
+|                 opt_vx7.i_uniwrap                                               |     1.045 |
+|   u_pid_contorl                                                                 |    10.609 |
+|     Mul_P                                                                       |     0.988 |
+|       U0                                                                        |     0.988 |
+|         i_mult                                                                  |     0.988 |
+|           gDSP.gDSP_only.iDSP                                                   |     0.988 |
+|     Mul_PID_D                                                                   |     3.494 |
+|       U0                                                                        |     3.494 |
+|         i_synth                                                                 |     3.494 |
+|           device_supports_dsp.use_multadd_dsp                                   |     3.494 |
+|             dsp48s_multadd.separate.add                                         |     1.401 |
+|               two_dsps.addsub0                                                  |     1.068 |
+|                 i_synth_option.i_synth_model                                    |     1.068 |
+|                   opt_vx7.i_uniwrap                                             |     1.068 |
+|               two_dsps.pipelined1.addsub0_balance_reg                           |     0.333 |
+|             dsp48s_multadd.separate.mult                                        |     2.093 |
+|               gDSP.gDSP_only.iDSP                                               |     2.093 |
+|                 use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay |     0.105 |
+|     Mul_PID_I                                                                   |     3.553 |
+|       U0                                                                        |     3.553 |
+|         i_synth                                                                 |     3.553 |
+|           device_supports_dsp.use_multadd_dsp                                   |     3.553 |
+|             dsp48s_multadd.separate.add                                         |     1.423 |
+|               two_dsps.addsub0                                                  |     1.033 |
+|                 i_synth_option.i_synth_model                                    |     1.033 |
+|                   opt_vx7.i_uniwrap                                             |     1.033 |
+|               two_dsps.pipelined1.addsub0_balance_reg                           |     0.390 |
+|             dsp48s_multadd.separate.mult                                        |     2.130 |
+|               gDSP.gDSP_only.iDSP                                               |     2.130 |
+|                 use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay |     0.129 |
+|     PID_SUB_1_d                                                                 |     0.398 |
+|       U0                                                                        |     0.398 |
+|         xst_addsub                                                              |     0.398 |
+|           i_baseblox.i_baseblox_addsub                                          |     0.398 |
+|             no_pipelining.the_addsub                                            |     0.398 |
+|               i_lut6.i_lut6_addsub                                              |     0.398 |
+|                 i_q.i_simple.qreg                                               |     0.395 |
+|     PID_SUB_2_d                                                                 |     0.257 |
+|       U0                                                                        |     0.257 |
+|         xst_addsub                                                              |     0.257 |
+|           i_baseblox.i_baseblox_addsub                                          |     0.257 |
+|             no_pipelining.the_addsub                                            |     0.257 |
+|               i_lut6.i_lut6_addsub                                              |     0.257 |
+|                 i_q.i_simple.qreg                                               |     0.188 |
+|     PID_adder                                                                   |     0.437 |
+|       U0                                                                        |     0.437 |
+|         xst_addsub                                                              |     0.437 |
+|           i_baseblox.i_baseblox_addsub                                          |     0.437 |
+|             no_pipelining.the_addsub                                            |     0.437 |
+|               i_lut6.i_lut6_addsub                                              |     0.437 |
+|                 i_q.i_simple.qreg                                               |     0.290 |
+|   uart_top_new                                                                  |     0.435 |
+|     uart_send_fifo_new                                                          |     0.093 |
+|       U0                                                                        |     0.093 |
+|         inst_fifo_gen                                                           |     0.093 |
+|           gconvfifo.rf                                                          |     0.093 |
+|             grf.rf                                                              |     0.093 |
+|               gntv_or_sync_fifo.gl0.rd                                          |     0.059 |
+|                 grss.rsts                                                       |     0.017 |
 |                   c1                                                            |    <0.001 |
-|                   c2                                                            |     0.004 |
-|                 rpntr                                                           |     0.032 |
+|                   c2                                                            |     0.002 |
+|                 rpntr                                                           |     0.042 |
 |               gntv_or_sync_fifo.gl0.wr                                          |     0.006 |
 |                 gwss.wsts                                                       |    <0.001 |
-|                 wpntr                                                           |     0.005 |
+|                 wpntr                                                           |     0.006 |
 |               gntv_or_sync_fifo.mem                                             |     0.028 |
 |                 gbm.gbmg.gbmga.ngecc.bmg                                        |     0.028 |
 |                   inst_blk_mem_gen                                              |     0.028 |
@@ -265,9 +265,9 @@ Table of Contents
 |                       valid.cstr                                                |     0.028 |
 |                         ramloop[0].ram.r                                        |     0.028 |
 |                           prim_noinit.ram                                       |     0.028 |
-|     uart_sub_1                                                                  |     0.214 |
-|       uart_rx_inst                                                              |     0.167 |
-|       uart_tx_inst                                                              |     0.047 |
+|     uart_sub_1                                                                  |     0.219 |
+|       uart_rx_inst                                                              |     0.172 |
+|       uart_tx_inst                                                              |     0.048 |
 +---------------------------------------------------------------------------------+-----------+
 
 

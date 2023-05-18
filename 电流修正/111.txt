@@ -1,0 +1,6 @@
+current_set表示设置值，vol_send表示发送到fpga的电压值，他们拟合的式子是
+通道1：vol_send = 0.0004 * current_set^2 + 11.3509 * current_set;
+通道2：vol_send = 0.00036 * current_set^2 + 11.3592 * current_set - 8.2736;
+通道3：vol_send = 0.00035 * current_set^2 + 11.3655 * current_set - 0.5453;
+通道4：vol_send = 0.00034 * current_set^2 + 11.4027 * current_set - 5.1199;
+

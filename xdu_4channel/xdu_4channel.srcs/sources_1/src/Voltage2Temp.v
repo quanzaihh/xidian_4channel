@@ -16,6 +16,9 @@ module Voltage2Temp(
 	output reg [15:0]   TEC_Temp4
 );
 
+`define Resister_3930
+
+`ifdef Resister_3435
 localparam V_0 = 17'h016bd;
 localparam V_1 = 17'h01ba7;
 localparam V_2 = 17'h02112;
@@ -67,6 +70,57 @@ localparam b_13 = 40'h0efed0e560;
 localparam b_14 = 40'h124044d013;
 localparam b_15 = 40'h163cb0f27b;
 localparam b_16 = 40'h1b1923a29c;
+`elsif Resister_3930
+localparam V_0 = 17'h0137a;
+localparam V_1 = 17'h0185a;
+localparam V_2 = 17'h01de7;
+localparam V_3 = 17'h02417;
+localparam V_4 = 17'h02ac4;
+localparam V_5 = 17'h031c3;
+localparam V_6 = 17'h038e7;
+localparam V_7 = 17'h04000;
+localparam V_8 = 17'h046e3;
+localparam V_9 = 17'h04d6d;
+localparam V_10 = 17'h05381;
+localparam V_11 = 17'h05911;
+localparam V_12 = 17'h05e13;
+localparam V_13 = 17'h06282;
+localparam V_14 = 17'h0666b;
+localparam V_15 = 17'h069d5;
+localparam V_16 = 17'h06ccd;
+localparam W_1 = 24'h41af8d;
+localparam W_2 = 24'h39a158;
+localparam W_3 = 24'h33b78d;
+localparam W_4 = 24'h2ff29f;
+localparam W_5 = 24'h2dbcbc;
+localparam W_6 = 24'h2cd1a9;
+localparam W_7 = 24'h2d13d7;
+localparam W_8 = 24'h2e77ef;
+localparam W_9 = 24'h30f645;
+localparam W_10 = 24'h34a1a9;
+localparam W_11 = 24'h398cfd;
+localparam W_12 = 24'h3fe7ef;
+localparam W_13 = 24'h482116;
+localparam W_14 = 24'h51dc18;
+localparam W_15 = 24'h5dc604;
+localparam W_16 = 24'h6bc22d;
+localparam b_1 = 40'h077f7e90ff;
+localparam b_2 = 40'h06bb573eab;
+localparam b_3 = 40'h060a83e425;
+localparam b_4 = 40'h05827a0f90;
+localparam b_5 = 40'h0523f14120;
+localparam b_6 = 40'h04f640b780;
+localparam b_7 = 40'h0504f5c28f;
+localparam b_8 = 40'h055dfbe76c;
+localparam b_9 = 40'h060ebd3c36;
+localparam b_10 = 40'h072ad77318;
+localparam b_11 = 40'h08c59b3d07;
+localparam b_12 = 40'h0afb9f559b;
+localparam b_13 = 40'h0e012f1a9f;
+localparam b_14 = 40'h11bfb15b57;
+localparam b_15 = 40'h1683d8adab;
+localparam b_16 = 40'h1c4bd8adab;
+`endif
 
 // 依次遍历4个通道，并将他们转化为温度
 localparam	WAIT_VOLTAGE_REFRESH= 3'd0;

@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc rfile:../../../xdu_4channel.srcs/constrs_1/new/XDC.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.srcs/constrs_1/new/XDC.xdc rfile:../../../xdu_4channel.srcs/constrs_1/new/XDC.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN Y18 [get_ports clk]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]

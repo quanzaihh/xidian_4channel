@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tfgg484-2" LaunchTime="1684030497">
+<GenRun Id="synth_1" LaunchPart="xc7a35tfgg484-2" LaunchTime="1684396130">
   <File Type="PA-TCL" Name="Multi_Channel_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Multi_Channel_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Multi_Channel_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="Multi_Channel_top.vds"/>
   <File Type="RDS-UTIL" Name="Multi_Channel_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Multi_Channel_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Multi_Channel_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Multi_Channel_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Multi_Channel_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/ip/MULTI_Voltage2temp/MULTI_Voltage2temp.xci">
@@ -128,10 +131,10 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="DAC_fifo"/>
   <BlockFileSet Type="BlockSrcs" Name="Mul_P"/>
-  <BlockFileSet Type="BlockSrcs" Name="uart_send_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="DAC_fifo"/>
   <BlockFileSet Type="BlockSrcs" Name="PID_adder"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_send_fifo"/>
   <BlockFileSet Type="BlockSrcs" Name="Mul_PID"/>
   <BlockFileSet Type="BlockSrcs" Name="PID_SUB"/>
 </GenRun>

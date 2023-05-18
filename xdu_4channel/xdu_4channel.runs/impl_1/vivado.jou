@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Mon May 15 11:48:21 2023
-# Process ID: 18548
-# Current directory: C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/impl_1
+# Start of session at: Thu May 18 15:49:27 2023
+# Process ID: 74028
+# Current directory: C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/impl_1
 # Command line: vivado.exe -log Multi_Channel_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Multi_Channel_top.tcl -notrace
-# Log file: C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/impl_1/Multi_Channel_top.vdi
-# Journal file: C:/Users/quanzai/Desktop/xidian_4channel-master/xidian_4channel-master/xdu_4channel/xdu_4channel.runs/impl_1\vivado.jou
+# Log file: C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/impl_1/Multi_Channel_top.vdi
+# Journal file: C:/Users/Administrator/Desktop/xidian_4channel/xdu_4channel/xdu_4channel.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source Multi_Channel_top.tcl -notrace
