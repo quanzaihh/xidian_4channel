@@ -195,3 +195,8 @@ dismissDialog("Launch Runs"); // f (cj)
 dismissDialog("Generate Bitstream"); // bs (cj)
 // TclEventType: RUN_COMPLETED
 // TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 375 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 774 MB. GUI used memory: 51 MB. Current time: 5/18/23 3:55:10 PM CST
