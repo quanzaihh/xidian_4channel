@@ -158,7 +158,7 @@ DAC_1
     .cmd_full			(cmd_full)
 );
 
-// DAC1控制Channel3和Channel4，一共有8个DA出口，前两个空置，3，4控制TEC3和TEC4，5，6控制LD3和LD4的电压，7，8控制LD3和LD4的电流
+// DAC2控制Channel3和Channel4，一共有8个DA出口，前两个空置，3，4控制TEC3和TEC4，5，6控制LD3和LD4的电压，7，8控制LD3和LD4的电流
 DAC_5676 #(
 	.init(8'b00000011)
 )

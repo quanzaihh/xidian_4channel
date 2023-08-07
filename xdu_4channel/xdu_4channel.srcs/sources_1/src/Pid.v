@@ -170,7 +170,7 @@ always@(posedge clk or negedge rst_n)begin
     else begin
         case(pid_state)
             WAIT_TIME:begin
-                if (cnt==32'd25_000_000) begin
+                if (cnt==32'd25_000_000) begin    // 0.5秒调节一次
                     pid_state <= SELETC_CHANNEL;
                     channel <= 0;
                     cnt <= 0;
@@ -328,7 +328,7 @@ always@(posedge clk or negedge rst_n)begin
 end
 
 
-/*------------------实例化xilinx两个乘法器-------------------------------------------*/
+/*------------------实例化xilinx三个乘法器-------------------------------------------*/
 // 计算一阶误差error = target - now_value
 PID_SUB PID_SUB_1_d(
     .CLK        (clk),
